@@ -30,7 +30,7 @@ Output the results as a **pure JSON array**, with no explanation or commentary. 
     "setup": "Gap Fade",
     "direction": "Put",
     "strike": 512,
-    "expiry": "{today}",
+    "expiry": "{{today}}",
     "entry": 0.40,
     "target": 1.00,
     "stop": 0.20,
