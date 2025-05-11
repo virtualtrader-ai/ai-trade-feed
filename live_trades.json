@@ -3,36 +3,36 @@
     "ticker": "TSLA",
     "setup": "Breakout Retest",
     "direction": "Call",
-    "strike": 580,
+    "strike": 680,
     "expiry": "2025-05-11",
     "entry": 0.75,
     "target": 1.5,
     "stop": 0.5,
     "confidence": "High",
-    "rationale": "TSLA broke out above 570 resistance, now retesting breakout level with strong volume."
+    "rationale": "TSLA broke out above 680 resistance, now retesting that level with increasing buying volume."
   },
   {
     "ticker": "NVDA",
     "setup": "Momentum Run",
     "direction": "Call",
-    "strike": 700,
+    "strike": 715,
     "expiry": "2025-05-11",
     "entry": 0.9,
     "target": 2.0,
-    "stop": 0.6,
+    "stop": 0.5,
     "confidence": "Medium",
-    "rationale": "NVDA showing bullish momentum, breaking out above key moving averages with increasing buying pressure."
+    "rationale": "NVDA showing strong momentum after positive earnings, pushing towards the next resistance level at 715."
   },
   {
     "ticker": "RIOT",
     "setup": "Catalyst Play",
     "direction": "Put",
-    "strike": 32,
+    "strike": 30,
     "expiry": "2025-05-11",
     "entry": 0.6,
     "target": 1.2,
     "stop": 0.3,
     "confidence": "High",
-    "rationale": "RIOT dropping after disappointing earnings, facing resistance at 32 with bearish sentiment growing."
+    "rationale": "RIOT reacting negatively to the overall crypto sector weakness, breaking below key support at 30."
   }
 ]
