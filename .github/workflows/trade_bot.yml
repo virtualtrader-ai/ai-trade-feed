@@ -1,10 +1,9 @@
-
 name: Generate Daily Trades
 
 on:
-  schedule:
-    - cron: "0 13 * * *"  # Every day at 6am PST
   workflow_dispatch:
+  schedule:
+    - cron: '0 13 * * *'  # Runs daily at 6am PST
 
 jobs:
   generate-trades:
@@ -16,22 +15,20 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version: '3.10'
 
-      - name: Install OpenAI SDK
+      - name: Install OpenAI
         run: pip install openai
 
-      - name: Run trade generator
+      - name: Generate trades
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: |
-          python generate_trades.py
+        run: python generate_trades.py
 
-      - name: Commit and push
+      - name: Commit and push updates
         run: |
           git config user.name "auto-bot"
           git config user.email "bot@trading.ai"
           git add live_trades.json
-          git commit -m "Update daily trade feed"
+          git commit -m "Daily trade update"
           git push
-
