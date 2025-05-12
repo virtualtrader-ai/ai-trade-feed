@@ -1,38 +1,38 @@
 [
   {
     "ticker": "TSLA",
-    "setup": "Breakout Retest",
+    "setup": "Momentum Run",
     "direction": "Call",
-    "strike": 600,
-    "expiry": "2025-05-11",
+    "strike": 1040,
+    "expiry": "2025-05-12",
     "entry": 0.8,
     "target": 2.0,
     "stop": 0.4,
     "confidence": "High",
-    "rationale": "TSLA broke out above 600 resistance yesterday and is retesting it today with bullish momentum."
+    "rationale": "TSLA showing strong upward momentum with increasing volume ahead of anticipated positive news release."
   },
   {
     "ticker": "NVDA",
-    "setup": "Momentum Run",
+    "setup": "Breakout Retest",
     "direction": "Call",
-    "strike": 800,
-    "expiry": "2025-05-11",
+    "strike": 820,
+    "expiry": "2025-05-12",
     "entry": 0.6,
     "target": 1.5,
     "stop": 0.3,
     "confidence": "Medium",
-    "rationale": "NVDA has been showing strong momentum after positive earnings, aiming for a continuation run."
+    "rationale": "NVDA broke out above key resistance level and is now retesting it with bullish price action."
   },
   {
     "ticker": "RIOT",
-    "setup": "Catalyst Play",
+    "setup": "Premarket Reversal",
     "direction": "Put",
-    "strike": 30,
-    "expiry": "2025-05-11",
+    "strike": 22,
+    "expiry": "2025-05-12",
     "entry": 0.5,
     "target": 1.2,
     "stop": 0.25,
     "confidence": "High",
-    "rationale": "RIOT is reacting negatively to Bitcoin pullback news, providing a short-term put opportunity."
+    "rationale": "RIOT experienced a sharp premarket rally but failed to hold gains, indicating potential reversal with downside pressure."
   }
 ]
