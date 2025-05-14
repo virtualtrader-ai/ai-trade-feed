@@ -1,38 +1,38 @@
 [
   {
     "ticker": "TSLA",
-    "setup": "Momentum Run",
+    "setup": "Breakout Retest",
     "direction": "Call",
-    "strike": 880,
-    "expiry": "2025-05-13",
+    "strike": 620,
+    "expiry": "2025-05-14",
     "entry": 0.75,
     "target": 1.5,
     "stop": 0.5,
     "confidence": "High",
-    "rationale": "TSLA showing strong bullish momentum with increasing volume and breaking above key resistance levels."
+    "rationale": "TSLA broke out above key resistance at 615, retesting for continuation higher."
   },
   {
     "ticker": "NVDA",
-    "setup": "Breakout Retest",
+    "setup": "Momentum Run",
     "direction": "Call",
-    "strike": 765,
-    "expiry": "2025-05-13",
+    "strike": 715,
+    "expiry": "2025-05-14",
     "entry": 0.9,
-    "target": 1.8,
-    "stop": 0.45,
+    "target": 2.0,
+    "stop": 0.5,
     "confidence": "Medium",
-    "rationale": "NVDA broke out to new highs, retesting previous resistance as support and showing signs of continuation."
+    "rationale": "NVDA showing strong bullish momentum after positive earnings, pushing towards recent highs."
   },
   {
     "ticker": "RIOT",
     "setup": "Catalyst Play",
     "direction": "Put",
-    "strike": 25,
-    "expiry": "2025-05-13",
+    "strike": 30,
+    "expiry": "2025-05-14",
     "entry": 0.6,
     "target": 1.2,
     "stop": 0.3,
     "confidence": "High",
-    "rationale": "RIOT reacting negatively to Bitcoin price drop, with increased selling pressure and potential for further downside."
+    "rationale": "RIOT reacting negatively to Bitcoin price drop, potential for further downside move."
   }
 ]
