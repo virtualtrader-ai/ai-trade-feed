@@ -1,38 +1,38 @@
 [
   {
     "ticker": "TSLA",
-    "setup": "Breakout Retest",
+    "setup": "Momentum Run",
     "direction": "Call",
-    "strike": 1020,
-    "expiry": "2025-05-15",
-    "entry": 0.75,
-    "target": 2.0,
-    "stop": 0.4,
+    "strike": 740,
+    "expiry": "2025-05-16",
+    "entry": 0.8,
+    "target": 1.5,
+    "stop": 0.5,
     "confidence": "High",
-    "rationale": "TSLA broke out above 1015 resistance, retesting it now with strong buying volume."
+    "rationale": "TSLA showing strong bullish momentum after positive earnings, looking to continue higher."
   },
   {
     "ticker": "NVDA",
-    "setup": "Momentum Run",
+    "setup": "Breakout Retest",
     "direction": "Call",
-    "strike": 800,
-    "expiry": "2025-05-15",
-    "entry": 0.9,
-    "target": 2.5,
-    "stop": 0.6,
+    "strike": 710,
+    "expiry": "2025-05-16",
+    "entry": 0.6,
+    "target": 1.2,
+    "stop": 0.3,
     "confidence": "Medium",
-    "rationale": "NVDA showing strong momentum after positive earnings, looking to continue higher."
+    "rationale": "NVDA broke out to new highs, now retesting breakout level with increasing volume."
   },
   {
-    "ticker": "AMD",
-    "setup": "Catalyst Play",
+    "ticker": "RIOT",
+    "setup": "Catalyst Play (Bitcoin News)",
     "direction": "Put",
-    "strike": 105,
-    "expiry": "2025-05-15",
-    "entry": 0.5,
-    "target": 1.5,
-    "stop": 0.3,
+    "strike": 16,
+    "expiry": "2025-05-16",
+    "entry": 0.9,
+    "target": 1.8,
+    "stop": 0.45,
     "confidence": "High",
-    "rationale": "AMD reacting negatively to sector downgrade news, expecting further downside pressure."
+    "rationale": "RIOT dropping on bearish Bitcoin news, likely to see further downside pressure."
   }
 ]
