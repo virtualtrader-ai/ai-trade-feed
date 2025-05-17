@@ -9,11 +9,11 @@
     "target": 4.0,
     "stop": 1.8,
     "confidence": "Medium",
-    "rationale": "AAPL recently reported better-than-expected earnings, leading to a bullish breakout above key resistance levels. With positive sentiment surrounding the stock and strong technicals, a call option at a strike of 150 could offer significant upside potential."
+    "rationale": "AAPL recently reported better-than-expected earnings, leading to a bullish breakout above key resistance levels. With positive sentiment surrounding the stock and strong technical indicators, a call option at a strike of 150 for a short-term trade could yield significant returns."
   },
   {
     "ticker": "TSLA",
-    "setup": "Bearish divergence on RSI with Elon Musk selling shares",
+    "setup": "Bearish divergence on RSI with Elon Musk tweet catalyst",
     "direction": "Put",
     "strike": 900,
     "expiry": "2025-05-17",
@@ -21,95 +21,83 @@
     "target": 12.0,
     "stop": 6.0,
     "confidence": "High",
-    "rationale": "TSLA is showing bearish divergence on the RSI indicator, indicating a potential reversal in the stock's price. Additionally, Elon Musk recently announced plans to sell shares, which could further pressure the stock. A put option at a strike of 900 could capitalize on this downside potential."
+    "rationale": "TSLA is showing bearish divergence on the RSI indicator, indicating a potential reversal in the stock's price. Additionally, a negative tweet from Elon Musk could further drive the stock down. A put option at a strike of 900 for a short-term trade presents a high-confidence opportunity for profit."
   },
   {
     "ticker": "AMZN",
-    "setup": "Gap fill trade after strong earnings beat",
-    "direction": "Call",
-    "strike": 3500,
+    "setup": "Gap fill reversal with Jeff Bezos insider selling",
+    "direction": "Put",
+    "strike": 3200,
     "expiry": "2025-05-17",
     "entry": 15.0,
     "target": 20.0,
     "stop": 12.0,
     "confidence": "Medium",
-    "rationale": "AMZN recently reported impressive earnings, leading to a gap up in the stock price. Historically, gap fill trades tend to be profitable as the stock retraces back to fill the gap. With strong technicals and positive momentum, a call option at a strike of 3500 could offer a lucrative opportunity."
+    "rationale": "AMZN has a gap to fill on the daily chart, presenting a potential reversal opportunity. Additionally, recent insider selling by Jeff Bezos could signal underlying weakness in the stock. A put option at a strike of 3200 for a short-term trade could capitalize on these bearish signals."
   },
   {
     "ticker": "MSFT",
-    "setup": "Bullish trend continuation on strong macro outlook",
+    "setup": "Bullish flag pattern breakout with positive macro outlook",
     "direction": "Call",
-    "strike": 300,
-    "expiry": "2025-05-17",
-    "entry": 5.5,
-    "target": 8.0,
-    "stop": 4.0,
-    "confidence": "High",
-    "rationale": "MSFT is in a strong bullish trend supported by a positive macro outlook for the tech sector. With solid fundamentals and technicals, a call option at a strike of 300 could benefit from the stock's upward momentum."
-  },
-  {
-    "ticker": "GOOGL",
-    "setup": "Breakout above key resistance level on insider buying",
-    "direction": "Call",
-    "strike": 2800,
-    "expiry": "2025-05-17",
-    "entry": 12.0,
-    "target": 16.0,
-    "stop": 9.0,
-    "confidence": "Medium",
-    "rationale": "GOOGL has recently broken out above a key resistance level, signaling a potential uptrend. Additionally, there has been notable insider buying activity in the stock, indicating confidence in future price appreciation. A call option at a strike of 2800 could capitalize on this bullish momentum."
-  },
-  {
-    "ticker": "NFLX",
-    "setup": "Bearish head and shoulders pattern with negative flow data",
-    "direction": "Put",
-    "strike": 500,
-    "expiry": "2025-05-17",
-    "entry": 6.5,
-    "target": 9.0,
-    "stop": 4.5,
-    "confidence": "High",
-    "rationale": "NFLX is forming a bearish head and shoulders pattern, indicating a potential trend reversal. Additionally, negative flow data suggests institutional selling pressure on the stock. A put option at a strike of 500 could profit from the expected downside move."
-  },
-  {
-    "ticker": "FB",
-    "setup": "Reversal trade on oversold conditions and positive political news",
-    "direction": "Call",
-    "strike": 300,
-    "expiry": "2025-05-17",
-    "entry": 4.0,
-    "target": 6.0,
-    "stop": 2.5,
-    "confidence": "Medium",
-    "rationale": "FB is currently oversold based on technical indicators, presenting a potential buying opportunity. Positive political news related to regulatory concerns being resolved could also boost the stock price. A call option at a strike of 300 could benefit from a reversal in sentiment."
-  },
-  {
-    "ticker": "NVDA",
-    "setup": "Breakout above key resistance level with strong earnings growth",
-    "direction": "Call",
-    "strike": 700,
-    "expiry": "2025-05-17",
-    "entry": 10.0,
-    "target": 14.0,
-    "stop": 7.0,
-    "confidence": "High",
-    "rationale": "NVDA has broken out above a key resistance level, indicating a potential uptrend. The stock also has a track record of strong earnings growth, which could further support price appreciation. A call option at a strike of 700 could capture the upside potential in NVDA."
-  },
-  {
-    "ticker": "BA",
-    "setup": "Bearish trend continuation on negative news flow",
-    "direction": "Put",
-    "strike": 200,
+    "strike": 260,
     "expiry": "2025-05-17",
     "entry": 3.5,
     "target": 5.5,
-    "stop": 2.0,
+    "stop": 2.5,
     "confidence": "High",
-    "rationale": "BA is in a bearish trend driven by negative news flow, including concerns over production delays and regulatory issues. With technicals supporting further downside, a put option at a strike of 200 could profit from the continuation of the bearish trend."
+    "rationale": "MSFT is showing a bullish flag pattern breakout on the daily chart, indicating a potential continuation of the uptrend. With a positive macro outlook for tech stocks, a call option at a strike of 260 for a short-term trade could offer significant upside potential."
+  },
+  {
+    "ticker": "GOOGL",
+    "setup": "Bearish head and shoulders pattern with antitrust news catalyst",
+    "direction": "Put",
+    "strike": 2500,
+    "expiry": "2025-05-17",
+    "entry": 12.0,
+    "target": 18.0,
+    "stop": 9.0,
+    "confidence": "High",
+    "rationale": "GOOGL is forming a bearish head and shoulders pattern on the daily chart, signaling a potential trend reversal. Additionally, negative news related to antitrust investigations could further weigh on the stock. A put option at a strike of 2500 for a short-term trade presents a high-confidence opportunity for profit."
+  },
+  {
+    "ticker": "NFLX",
+    "setup": "Earnings gap fill with streaming competition catalyst",
+    "direction": "Put",
+    "strike": 600,
+    "expiry": "2025-05-17",
+    "entry": 5.5,
+    "target": 8.5,
+    "stop": 4.0,
+    "confidence": "Medium",
+    "rationale": "NFLX has a gap to fill on the daily chart following its recent earnings report, presenting a potential reversal opportunity. With increasing competition in the streaming industry, the stock could face further downside pressure. A put option at a strike of 600 for a short-term trade could capitalize on these bearish factors."
+  },
+  {
+    "ticker": "FB",
+    "setup": "Bullish trend continuation with positive social media sentiment",
+    "direction": "Call",
+    "strike": 330,
+    "expiry": "2025-05-17",
+    "entry": 4.0,
+    "target": 6.5,
+    "stop": 2.5,
+    "confidence": "Medium",
+    "rationale": "FB is showing a bullish trend continuation on the daily chart, supported by positive social media sentiment and strong technical indicators. With the potential for further upside momentum, a call option at a strike of 330 for a short-term trade could result in profitable returns."
+  },
+  {
+    "ticker": "NVDA",
+    "setup": "Bearish double top pattern with semiconductor sector weakness",
+    "direction": "Put",
+    "strike": 700,
+    "expiry": "2025-05-17",
+    "entry": 9.0,
+    "target": 14.0,
+    "stop": 6.0,
+    "confidence": "High",
+    "rationale": "NVDA is forming a bearish double top pattern on the daily chart, indicating a potential trend reversal. With weakness in the semiconductor sector due to supply chain issues, the stock could face further downside pressure. A put option at a strike of 700 for a short-term trade presents a high-confidence opportunity for profit."
   },
   {
     "ticker": "AMD",
-    "setup": "Consolidation breakout with positive earnings outlook",
+    "setup": "Bullish breakout on strong guidance with semiconductor sector tailwinds",
     "direction": "Call",
     "strike": 120,
     "expiry": "2025-05-17",
@@ -117,6 +105,18 @@
     "target": 3.5,
     "stop": 1.2,
     "confidence": "Medium",
-    "rationale": "AMD has broken out of a consolidation pattern, signaling a potential uptrend. The stock also has a positive earnings outlook, with expectations of strong growth in the semiconductor sector. A call option at a strike of 120 could capitalize on the stock's bullish momentum."
+    "rationale": "AMD recently provided strong guidance, leading to a bullish breakout above key resistance levels. With tailwinds in the semiconductor sector and positive market sentiment, a call option at a strike of 120 for a short-term trade could offer attractive returns."
+  },
+  {
+    "ticker": "PYPL",
+    "setup": "Bearish trend reversal on regulatory concerns",
+    "direction": "Put",
+    "strike": 200,
+    "expiry": "2025-05-17",
+    "entry": 3.0,
+    "target": 5.0,
+    "stop": 2.0,
+    "confidence": "High",
+    "rationale": "PYPL is showing signs of a bearish trend reversal on the daily chart, driven by regulatory concerns surrounding the fintech industry. With potential downside risk in the stock, a put option at a strike of 200 for a short-term trade presents a high-confidence opportunity for profit."
   }
 ]
