@@ -1,56 +1,44 @@
 {
   "date": "2025-05-17",
-  "total_tokens_used": 11228,
-  "estimated_cost_usd": 0.0225,
+  "total_tokens_used": 4993,
+  "estimated_cost_usd": 0.01,
   "profile_breakdown": {
     "Market Pulse": {
-      "tokens_this_run": 482,
-      "estimated_cost_this_run": 0.001
+      "tokens_this_run": 784,
+      "estimated_cost_this_run": 0.0016
     },
-    "Luna - The Momentum Trader": {
-      "tokens_this_run": 1743,
-      "estimated_cost_this_run": 0.0035
-    },
+    "Luna - The Momentum Trader": "Failed",
     "Mark - The Conservative Investor": {
-      "tokens_this_run": 1767,
-      "estimated_cost_this_run": 0.0035
+      "tokens_this_run": 2174,
+      "estimated_cost_this_run": 0.0043
     },
-    "Riley - The Catalyst Trader": {
-      "tokens_this_run": 1607,
-      "estimated_cost_this_run": 0.0032
-    },
+    "Riley - The Catalyst Trader": "Failed",
     "Zara - The Defensive Strategist": {
-      "tokens_this_run": 1863,
-      "estimated_cost_this_run": 0.0037
+      "tokens_this_run": 2035,
+      "estimated_cost_this_run": 0.0041
     },
-    "Leo - The High-Risk Options Specialist": {
-      "tokens_this_run": 1906,
-      "estimated_cost_this_run": 0.0038
-    },
-    "The Political Figure Trader": {
-      "tokens_this_run": 1860,
-      "estimated_cost_this_run": 0.0037
-    }
+    "Leo - The High-Risk Options Specialist": "Failed",
+    "The Political Figure Trader": "Failed"
   },
   "cumulative_metrics": {
-    "total_tokens": 21170,
-    "total_cost_usd": 0.04234,
+    "total_tokens": 26163,
+    "total_cost_usd": 0.052326,
     "profiles": {
       "Luna - The Momentum Trader": {
         "tokens": 3179,
         "cost_usd": 0.006358000000000001
       },
       "Mark - The Conservative Investor": {
-        "tokens": 3462,
-        "cost_usd": 0.006924
+        "tokens": 5636,
+        "cost_usd": 0.011272
       },
       "Riley - The Catalyst Trader": {
         "tokens": 3195,
         "cost_usd": 0.00639
       },
       "Zara - The Defensive Strategist": {
-        "tokens": 3525,
-        "cost_usd": 0.00705
+        "tokens": 5560,
+        "cost_usd": 0.011120000000000001
       },
       "Leo - The High-Risk Options Specialist": {
         "tokens": 3534,
@@ -61,8 +49,8 @@
         "cost_usd": 0.007214
       },
       "Market Pulse": {
-        "tokens": 668,
-        "cost_usd": 0.001336
+        "tokens": 1452,
+        "cost_usd": 0.0029040000000000003
       }
     }
   }
