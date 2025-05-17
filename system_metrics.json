@@ -1,22 +1,22 @@
 {
-  "total_tokens": 26163,
-  "total_cost_usd": 0.052326,
+  "total_tokens": 33301,
+  "total_cost_usd": 0.066602,
   "profiles": {
     "Luna - The Momentum Trader": {
-      "tokens": 3179,
-      "cost_usd": 0.006358000000000001
+      "tokens": 5702,
+      "cost_usd": 0.011404000000000001
     },
     "Mark - The Conservative Investor": {
-      "tokens": 5636,
-      "cost_usd": 0.011272
+      "tokens": 8055,
+      "cost_usd": 0.01611
     },
     "Riley - The Catalyst Trader": {
       "tokens": 3195,
       "cost_usd": 0.00639
     },
     "Zara - The Defensive Strategist": {
-      "tokens": 5560,
-      "cost_usd": 0.011120000000000001
+      "tokens": 7756,
+      "cost_usd": 0.015512000000000001
     },
     "Leo - The High-Risk Options Specialist": {
       "tokens": 3534,

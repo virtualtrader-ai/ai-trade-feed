@@ -1,44 +1,43 @@
 {
   "date": "2025-05-17",
-  "total_tokens_used": 4993,
-  "estimated_cost_usd": 0.01,
+  "total_tokens_used": 7138,
+  "estimated_cost_usd": 0.0143,
   "profile_breakdown": {
-    "Market Pulse": {
-      "tokens_this_run": 784,
-      "estimated_cost_this_run": 0.0016
+    "Luna - The Momentum Trader": {
+      "tokens_this_run": 2523,
+      "estimated_cost_this_run": 0.005
     },
-    "Luna - The Momentum Trader": "Failed",
     "Mark - The Conservative Investor": {
-      "tokens_this_run": 2174,
-      "estimated_cost_this_run": 0.0043
+      "tokens_this_run": 2419,
+      "estimated_cost_this_run": 0.0048
     },
     "Riley - The Catalyst Trader": "Failed",
     "Zara - The Defensive Strategist": {
-      "tokens_this_run": 2035,
-      "estimated_cost_this_run": 0.0041
+      "tokens_this_run": 2196,
+      "estimated_cost_this_run": 0.0044
     },
     "Leo - The High-Risk Options Specialist": "Failed",
     "The Political Figure Trader": "Failed"
   },
   "cumulative_metrics": {
-    "total_tokens": 26163,
-    "total_cost_usd": 0.052326,
+    "total_tokens": 33301,
+    "total_cost_usd": 0.066602,
     "profiles": {
       "Luna - The Momentum Trader": {
-        "tokens": 3179,
-        "cost_usd": 0.006358000000000001
+        "tokens": 5702,
+        "cost_usd": 0.011404000000000001
       },
       "Mark - The Conservative Investor": {
-        "tokens": 5636,
-        "cost_usd": 0.011272
+        "tokens": 8055,
+        "cost_usd": 0.01611
       },
       "Riley - The Catalyst Trader": {
         "tokens": 3195,
         "cost_usd": 0.00639
       },
       "Zara - The Defensive Strategist": {
-        "tokens": 5560,
-        "cost_usd": 0.011120000000000001
+        "tokens": 7756,
+        "cost_usd": 0.015512000000000001
       },
       "Leo - The High-Risk Options Specialist": {
         "tokens": 3534,
