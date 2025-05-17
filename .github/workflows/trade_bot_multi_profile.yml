@@ -3,11 +3,12 @@ name: Generate and Push Multi-Profile Trades
 on:
   schedule:
     - cron: '0 13 * * *'  # Runs daily at 6 AM PST
-  workflow_dispatch:         # Allows manual trigger from GitHub Actions tab
+  workflow_dispatch:         # Allows you to manually trigger the workflow from GitHub
 
 jobs:
   generate-trades:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
