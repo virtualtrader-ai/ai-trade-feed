@@ -1,68 +1,68 @@
 {
   "date": "2025-05-17",
-  "total_tokens_used": 9942,
-  "estimated_cost_usd": 0.0199,
+  "total_tokens_used": 11228,
+  "estimated_cost_usd": 0.0225,
   "profile_breakdown": {
     "Market Pulse": {
-      "tokens_this_run": 186,
-      "estimated_cost_this_run": 0.0004
+      "tokens_this_run": 482,
+      "estimated_cost_this_run": 0.001
     },
     "Luna - The Momentum Trader": {
-      "tokens_this_run": 1436,
-      "estimated_cost_this_run": 0.0029
+      "tokens_this_run": 1743,
+      "estimated_cost_this_run": 0.0035
     },
     "Mark - The Conservative Investor": {
-      "tokens_this_run": 1695,
-      "estimated_cost_this_run": 0.0034
+      "tokens_this_run": 1767,
+      "estimated_cost_this_run": 0.0035
     },
     "Riley - The Catalyst Trader": {
-      "tokens_this_run": 1588,
+      "tokens_this_run": 1607,
       "estimated_cost_this_run": 0.0032
     },
     "Zara - The Defensive Strategist": {
-      "tokens_this_run": 1662,
-      "estimated_cost_this_run": 0.0033
+      "tokens_this_run": 1863,
+      "estimated_cost_this_run": 0.0037
     },
     "Leo - The High-Risk Options Specialist": {
-      "tokens_this_run": 1628,
-      "estimated_cost_this_run": 0.0033
+      "tokens_this_run": 1906,
+      "estimated_cost_this_run": 0.0038
     },
     "The Political Figure Trader": {
-      "tokens_this_run": 1747,
-      "estimated_cost_this_run": 0.0035
+      "tokens_this_run": 1860,
+      "estimated_cost_this_run": 0.0037
     }
   },
   "cumulative_metrics": {
-    "total_tokens": 9942,
-    "total_cost_usd": 0.019884,
+    "total_tokens": 21170,
+    "total_cost_usd": 0.04234,
     "profiles": {
       "Luna - The Momentum Trader": {
-        "tokens": 1436,
-        "cost_usd": 0.002872
+        "tokens": 3179,
+        "cost_usd": 0.006358000000000001
       },
       "Mark - The Conservative Investor": {
-        "tokens": 1695,
-        "cost_usd": 0.0033900000000000002
+        "tokens": 3462,
+        "cost_usd": 0.006924
       },
       "Riley - The Catalyst Trader": {
-        "tokens": 1588,
-        "cost_usd": 0.0031760000000000004
+        "tokens": 3195,
+        "cost_usd": 0.00639
       },
       "Zara - The Defensive Strategist": {
-        "tokens": 1662,
-        "cost_usd": 0.0033239999999999997
+        "tokens": 3525,
+        "cost_usd": 0.00705
       },
       "Leo - The High-Risk Options Specialist": {
-        "tokens": 1628,
-        "cost_usd": 0.0032559999999999998
+        "tokens": 3534,
+        "cost_usd": 0.007068
       },
       "The Political Figure Trader": {
-        "tokens": 1747,
-        "cost_usd": 0.003494
+        "tokens": 3607,
+        "cost_usd": 0.007214
       },
       "Market Pulse": {
-        "tokens": 186,
-        "cost_usd": 0.000372
+        "tokens": 668,
+        "cost_usd": 0.001336
       }
     }
   }

@@ -1,34 +1,34 @@
 {
-  "total_tokens": 9942,
-  "total_cost_usd": 0.019884,
+  "total_tokens": 21170,
+  "total_cost_usd": 0.04234,
   "profiles": {
     "Luna - The Momentum Trader": {
-      "tokens": 1436,
-      "cost_usd": 0.002872
+      "tokens": 3179,
+      "cost_usd": 0.006358000000000001
     },
     "Mark - The Conservative Investor": {
-      "tokens": 1695,
-      "cost_usd": 0.0033900000000000002
+      "tokens": 3462,
+      "cost_usd": 0.006924
     },
     "Riley - The Catalyst Trader": {
-      "tokens": 1588,
-      "cost_usd": 0.0031760000000000004
+      "tokens": 3195,
+      "cost_usd": 0.00639
     },
     "Zara - The Defensive Strategist": {
-      "tokens": 1662,
-      "cost_usd": 0.0033239999999999997
+      "tokens": 3525,
+      "cost_usd": 0.00705
     },
     "Leo - The High-Risk Options Specialist": {
-      "tokens": 1628,
-      "cost_usd": 0.0032559999999999998
+      "tokens": 3534,
+      "cost_usd": 0.007068
     },
     "The Political Figure Trader": {
-      "tokens": 1747,
-      "cost_usd": 0.003494
+      "tokens": 3607,
+      "cost_usd": 0.007214
     },
     "Market Pulse": {
-      "tokens": 186,
-      "cost_usd": 0.000372
+      "tokens": 668,
+      "cost_usd": 0.001336
     }
   }
 }
