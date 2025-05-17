@@ -38,7 +38,9 @@ For each trade:
 Only output valid JSON inside triple backticks like this:
 ```json
 [your JSON here]
-success = False
+Do not add any explanations, comments, or text outside the JSON block.
+"""
+    success = False
 for attempt in range(3):
     try:
         response = client.chat.completions.create(
@@ -77,3 +79,4 @@ for attempt in range(3):
 
 if not success:
     print(f"❌ Failed to generate trades for {profile['name']} after 3 attempts.")
+
