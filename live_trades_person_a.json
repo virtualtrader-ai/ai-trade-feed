@@ -1,38 +1,38 @@
 [
   {
     "ticker": "AAPL",
-    "setup": "Bullish Flag Breakout",
+    "setup": "Bullish Breakout",
     "direction": "Call",
-    "strike": 140,
+    "strike": 135,
     "expiry": "2025-05-21",
     "entry": 2.5,
     "target": 4.0,
     "stop": 1.8,
     "confidence": "High",
-    "rationale": "AAPL has been consolidating in a tight range forming a bullish flag pattern. With increasing volume on the breakout and positive market sentiment towards tech stocks, this trade has a high potential for a strong upward move."
+    "rationale": "AAPL has been consolidating for several days with decreasing volume, indicating a potential breakout. Positive news on upcoming product releases and overall market strength further support this bullish trade."
   },
   {
     "ticker": "TSLA",
-    "setup": "Double Bottom Reversal",
-    "direction": "Call",
-    "strike": 800,
+    "setup": "Bearish Reversal",
+    "direction": "Put",
+    "strike": 600,
     "expiry": "2025-05-21",
-    "entry": 12.5,
-    "target": 17.0,
-    "stop": 9.8,
+    "entry": 4.75,
+    "target": 3.0,
+    "stop": 6.2,
     "confidence": "Medium",
-    "rationale": "TSLA has formed a double bottom pattern at a key support level with increasing buying pressure. Positive news catalysts in the EV sector and breakout volume support the potential for a strong reversal move."
+    "rationale": "TSLA has shown signs of exhaustion after a strong rally, with overbought conditions and decreasing buying pressure. A bearish reversal setup is forming, especially with potential negative catalysts in the EV sector."
   },
   {
-    "ticker": "BTC",
-    "setup": "Symmetrical Triangle Breakout",
-    "direction": "Call",
-    "strike": 45000,
-    "expiry": "2025-05-21",
-    "entry": 2200,
-    "target": 2800,
-    "stop": 2000,
+    "ticker": "ETH",
+    "setup": "Crypto Breakout",
+    "direction": "Buy",
+    "strike": 3500,
+    "expiry": "2025-05-17",
+    "entry": 3200,
+    "target": 3800,
+    "stop": 3000,
     "confidence": "High",
-    "rationale": "BTC has been consolidating in a symmetrical triangle pattern with decreasing volatility. A breakout above the upper trendline with strong volume and positive sentiment in the crypto market indicates a high probability for a bullish continuation."
+    "rationale": "ETH has been consolidating in a tight range with increasing volume, indicating a breakout is imminent. Positive sentiment in the crypto market and upcoming network upgrades provide strong catalysts for this trade."
   }
 ]

@@ -1,38 +1,38 @@
 [
   {
     "ticker": "AAPL",
-    "setup": "Earnings Run-Up",
+    "setup": "Earnings Play",
     "direction": "Call",
-    "strike": 125,
+    "strike": 135,
     "expiry": "2025-05-17",
-    "entry": 1.5,
-    "target": 3.0,
-    "stop": 0.75,
+    "entry": 2.5,
+    "target": 5.0,
+    "stop": 1.5,
     "confidence": "Medium",
-    "rationale": "AAPL is set to report earnings next week, historically showing a run-up in stock price leading to the event. With increasing call volume and positive sentiment, this trade aims to capture the pre-earnings momentum."
+    "rationale": "AAPL is set to release earnings today after market close, with analysts expecting positive results. Anticipation of a strong earnings report and potential positive guidance could drive the stock price higher, making a short-term call option play attractive."
   },
   {
     "ticker": "TSLA",
-    "setup": "Technical Breakout",
+    "setup": "Short Squeeze",
     "direction": "Call",
-    "strike": 700,
+    "strike": 1100,
     "expiry": "2025-05-17",
-    "entry": 2.8,
-    "target": 5.5,
-    "stop": 1.5,
+    "entry": 10.0,
+    "target": 20.0,
+    "stop": 5.0,
     "confidence": "High",
-    "rationale": "TSLA has broken out of a key resistance level with strong volume and positive price action. The bullish trend is supported by increasing call flow and a potential short squeeze, making this a high-reward setup."
+    "rationale": "TSLA has a high short interest, and any positive news could trigger a short squeeze, causing the stock price to skyrocket. Buying short-term call options allows for potential significant gains if the squeeze occurs."
   },
   {
     "ticker": "AMZN",
-    "setup": "Event Driven",
-    "direction": "Put",
-    "strike": 3200,
+    "setup": "Momentum Breakout",
+    "direction": "Call",
+    "strike": 3500,
     "expiry": "2025-05-17",
-    "entry": 4.5,
-    "target": 8.0,
-    "stop": 2.0,
-    "confidence": "High",
-    "rationale": "AMZN is facing regulatory scrutiny with a pending antitrust decision looming. This uncertainty has led to increased put activity and a bearish sentiment. The trade aims to capitalize on the downside potential ahead of the event."
+    "entry": 15.0,
+    "target": 30.0,
+    "stop": 7.5,
+    "confidence": "Medium",
+    "rationale": "AMZN has been consolidating in a tight range, showing signs of building momentum for a breakout. A break above key resistance levels could lead to a rapid price increase, making short-term call options a lucrative trade."
   }
 ]

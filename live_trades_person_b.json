@@ -1,38 +1,38 @@
 [
   {
     "ticker": "AAPL",
-    "setup": "Bullish Earnings Beat",
+    "setup": "Bullish Flag Pattern",
     "direction": "Call",
-    "strike": 140,
-    "expiry": "2025-05-17",
-    "entry": 3.5,
-    "target": 5.8,
-    "stop": 2.8,
+    "strike": 135,
+    "expiry": "2025-06-21",
+    "entry": 2.5,
+    "target": 4.0,
+    "stop": 1.8,
     "confidence": "Medium",
-    "rationale": "AAPL is expected to report strong earnings, supported by insider buying and positive analyst sentiment. The stock has low volatility and a history of beating earnings estimates, making it a favorable swing trade candidate."
+    "rationale": "AAPL has been consolidating in a bullish flag pattern after a recent uptrend. Insider buying activity has been observed, indicating potential upside. Low volatility in the stock suggests a breakout to the upside is likely."
   },
   {
-    "ticker": "MSFT",
+    "ticker": "T",
     "setup": "Dividend Play",
     "direction": "Call",
-    "strike": 255,
-    "expiry": "2025-05-17",
-    "entry": 4.2,
-    "target": 6.5,
-    "stop": 3.5,
+    "strike": 30,
+    "expiry": "2025-06-21",
+    "entry": 0.8,
+    "target": 1.2,
+    "stop": 0.5,
     "confidence": "High",
-    "rationale": "MSFT offers a solid dividend yield and has shown resilience in market downturns. Insider buying activity indicates confidence in the company's future performance, making it an attractive option for a conservative swing trade."
+    "rationale": "T has a high dividend yield and a history of consistent payouts, making it an attractive dividend play. Insider buying has been increasing, signaling confidence in the stock. The low volatility setup suggests limited downside risk."
   },
   {
-    "ticker": "JNJ",
+    "ticker": "VZ",
     "setup": "Low Volatility Breakout",
     "direction": "Call",
-    "strike": 175,
-    "expiry": "2025-05-17",
-    "entry": 2.8,
-    "target": 4.5,
-    "stop": 2.2,
+    "strike": 55,
+    "expiry": "2025-06-21",
+    "entry": 1.2,
+    "target": 2.0,
+    "stop": 0.8,
     "confidence": "Medium",
-    "rationale": "JNJ has been consolidating in a tight range with low volatility, indicating a potential breakout. Strong fundamentals, including insider buying and a history of dividend growth, support a bullish outlook for this stock."
+    "rationale": "VZ has been trading in a tight range with decreasing volatility, indicating a potential breakout. Insider buying activity has been noted, suggesting positive sentiment. The low volatility setup provides a favorable risk-reward ratio for a bullish trade."
   }
 ]
