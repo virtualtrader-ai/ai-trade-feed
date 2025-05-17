@@ -1,38 +1,52 @@
 [
   {
-    "ticker": "PFE",
-    "setup": "Bullish Breakout",
-    "direction": "Call",
-    "strike": 50,
-    "expiry": "2025-06-21",
-    "entry": 1.25,
-    "target": 2.5,
-    "stop": 0.75,
-    "confidence": "Medium",
-    "rationale": "PFE has been consolidating within a tight range and recently broke above a key resistance level on high volume. Positive news on their pipeline and strong sector momentum support a bullish breakout trade."
+    "stock": "PFE",
+    "action": "Buy",
+    "target_price": 45.5
   },
   {
-    "ticker": "DUK",
-    "setup": "Pullback Buy",
-    "direction": "Call",
-    "strike": 100,
-    "expiry": "2025-07-19",
-    "entry": 2.75,
-    "target": 4.5,
-    "stop": 2.0,
-    "confidence": "High",
-    "rationale": "DUK has shown strong relative strength in the utilities sector and is currently pulling back to a key support level. With a bullish trend intact and defensive sector rotation, a pullback buy offers a high reward setup."
+    "stock": "MRK",
+    "action": "Buy",
+    "target_price": 85.2
   },
   {
-    "ticker": "PG",
-    "setup": "Earnings Run-up",
-    "direction": "Call",
-    "strike": 140,
-    "expiry": "2025-06-21",
-    "entry": 3.5,
-    "target": 6.0,
-    "stop": 2.0,
-    "confidence": "High",
-    "rationale": "PG is approaching its earnings release date and historically tends to rally into earnings. Positive analyst sentiments and sector rotation towards consumer staples support a bullish call option trade for an earnings run-up."
+    "stock": "UNH",
+    "action": "Buy",
+    "target_price": 420.75
+  },
+  {
+    "stock": "JNJ",
+    "action": "Buy",
+    "target_price": 175.4
+  },
+  {
+    "stock": "CVS",
+    "action": "Buy",
+    "target_price": 90.6
+  },
+  {
+    "stock": "AEP",
+    "action": "Buy",
+    "target_price": 85.3
+  },
+  {
+    "stock": "DUK",
+    "action": "Buy",
+    "target_price": 105.8
+  },
+  {
+    "stock": "NEE",
+    "action": "Buy",
+    "target_price": 150.25
+  },
+  {
+    "stock": "SO",
+    "action": "Buy",
+    "target_price": 70.9
+  },
+  {
+    "stock": "XEL",
+    "action": "Buy",
+    "target_price": 70.1
   }
 ]

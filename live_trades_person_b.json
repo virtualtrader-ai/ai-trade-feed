@@ -1,38 +1,72 @@
 [
   {
-    "ticker": "AAPL",
-    "setup": "Bullish Flag Pattern",
-    "direction": "Call",
-    "strike": 130,
-    "expiry": "2025-06-21",
-    "entry": 3.5,
-    "target": 5.8,
-    "stop": 2.8,
-    "confidence": "Medium",
-    "rationale": "AAPL has formed a bullish flag pattern after a strong uptrend, with increasing volume and positive MACD crossover. Insider buying and upcoming product launches provide additional catalysts for a potential breakout."
+    "stock": "AAPL",
+    "action": "Buy",
+    "entry_price": 150.25,
+    "target_price": 155.5,
+    "stop_loss": 147.8
   },
   {
-    "ticker": "MSFT",
-    "setup": "Dividend Support Bounce",
-    "direction": "Call",
-    "strike": 250,
-    "expiry": "2025-06-21",
-    "entry": 4.2,
-    "target": 6.8,
-    "stop": 3.5,
-    "confidence": "High",
-    "rationale": "MSFT recently bounced off its dividend support level with strong buying pressure, indicating institutional accumulation. Low volatility and robust fundamentals make it an attractive swing trade candidate."
+    "stock": "AMZN",
+    "action": "Buy",
+    "entry_price": 3200.75,
+    "target_price": 3300.0,
+    "stop_loss": 3150.5
   },
   {
-    "ticker": "TSLA",
-    "setup": "Inside Bar Breakout",
-    "direction": "Call",
-    "strike": 650,
-    "expiry": "2025-06-21",
-    "entry": 12.5,
-    "target": 18.7,
-    "stop": 10.8,
-    "confidence": "Medium",
-    "rationale": "TSLA formed an inside bar pattern with decreasing volatility and bullish RSI divergence. Positive news catalysts and strong institutional ownership support a potential breakout to the upside."
+    "stock": "GOOGL",
+    "action": "Buy",
+    "entry_price": 2500.0,
+    "target_price": 2600.0,
+    "stop_loss": 2450.0
+  },
+  {
+    "stock": "MSFT",
+    "action": "Buy",
+    "entry_price": 260.5,
+    "target_price": 270.0,
+    "stop_loss": 255.0
+  },
+  {
+    "stock": "TSLA",
+    "action": "Buy",
+    "entry_price": 700.0,
+    "target_price": 750.0,
+    "stop_loss": 680.0
+  },
+  {
+    "stock": "NFLX",
+    "action": "Buy",
+    "entry_price": 600.25,
+    "target_price": 625.0,
+    "stop_loss": 590.0
+  },
+  {
+    "stock": "NVDA",
+    "action": "Buy",
+    "entry_price": 700.5,
+    "target_price": 725.0,
+    "stop_loss": 690.0
+  },
+  {
+    "stock": "PYPL",
+    "action": "Buy",
+    "entry_price": 250.75,
+    "target_price": 260.0,
+    "stop_loss": 245.0
+  },
+  {
+    "stock": "FB",
+    "action": "Buy",
+    "entry_price": 300.0,
+    "target_price": 310.0,
+    "stop_loss": 295.0
+  },
+  {
+    "stock": "BABA",
+    "action": "Buy",
+    "entry_price": 200.25,
+    "target_price": 210.0,
+    "stop_loss": 195.0
   }
 ]

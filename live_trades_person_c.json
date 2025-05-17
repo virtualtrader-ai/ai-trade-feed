@@ -1,38 +1,52 @@
 [
   {
-    "ticker": "AAPL",
-    "setup": "Earnings Beat",
-    "direction": "Call",
-    "strike": 145,
-    "expiry": "2025-05-17",
-    "entry": 2.5,
-    "target": 5.0,
-    "stop": 1.5,
-    "confidence": "High",
-    "rationale": "AAPL is expected to report strong earnings today after market close, with potential upside surprises in revenue and guidance. Positive sentiment and analyst upgrades suggest a bullish move post-earnings, making a call option attractive for high reward potential."
+    "stock": "AAPL",
+    "action": "Buy",
+    "target_price": 180.5
   },
   {
-    "ticker": "TSLA",
-    "setup": "FDA Approval",
-    "direction": "Call",
-    "strike": 700,
-    "expiry": "2025-05-17",
-    "entry": 4.75,
-    "target": 9.5,
-    "stop": 2.75,
-    "confidence": "Medium",
-    "rationale": "TSLA is awaiting FDA approval for a new groundbreaking technology in electric vehicles. Positive pre-announcement leaks and insider buying indicate a high chance of approval, leading to a potential surge in stock price. A call option provides a leveraged play on this catalyst."
+    "stock": "TSLA",
+    "action": "Sell",
+    "target_price": 950.25
   },
   {
-    "ticker": "AMZN",
-    "setup": "Catalyst Play",
-    "direction": "Call",
-    "strike": 3500,
-    "expiry": "2025-05-17",
-    "entry": 15.0,
-    "target": 30.0,
-    "stop": 10.0,
-    "confidence": "High",
-    "rationale": "AMZN is rumored to announce a major acquisition that could significantly boost its market presence. The anticipation of this news has led to increased options activity and a buildup of call positions. A call option offers a high-reward opportunity if the acquisition news is positive."
+    "stock": "AMZN",
+    "action": "Buy",
+    "target_price": 3350.75
+  },
+  {
+    "stock": "GOOGL",
+    "action": "Sell",
+    "target_price": 2800.0
+  },
+  {
+    "stock": "MSFT",
+    "action": "Buy",
+    "target_price": 290.3
+  },
+  {
+    "stock": "NFLX",
+    "action": "Sell",
+    "target_price": 600.8
+  },
+  {
+    "stock": "FB",
+    "action": "Buy",
+    "target_price": 330.2
+  },
+  {
+    "stock": "NVDA",
+    "action": "Sell",
+    "target_price": 700.5
+  },
+  {
+    "stock": "BABA",
+    "action": "Buy",
+    "target_price": 190.6
+  },
+  {
+    "stock": "AMD",
+    "action": "Sell",
+    "target_price": 120.75
   }
 ]

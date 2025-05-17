@@ -1,38 +1,72 @@
 [
   {
-    "ticker": "AAPL",
-    "setup": "Bull Flag Breakout",
-    "direction": "Call",
-    "strike": 140,
-    "expiry": "2025-05-21",
-    "entry": 2.5,
-    "target": 5.0,
-    "stop": 1.5,
-    "confidence": "High",
-    "rationale": "AAPL has been consolidating in a bull flag pattern with increasing volume. Positive news on new product launches and strong technical support at the current level indicate a potential breakout to the upside."
+    "stock": "AAPL",
+    "action": "Buy",
+    "entry_price": 150.25,
+    "target_price": 155.5,
+    "stop_loss": 147.8
   },
   {
-    "ticker": "TSLA",
-    "setup": "Cup and Handle Breakout",
-    "direction": "Call",
-    "strike": 1100,
-    "expiry": "2025-05-21",
-    "entry": 12.0,
-    "target": 20.0,
-    "stop": 8.0,
-    "confidence": "High",
-    "rationale": "TSLA formed a cup and handle pattern with breakout volume and positive momentum. The company's recent announcements on expanding product lines and market share growth support a bullish bias for a potential breakout."
+    "stock": "AMZN",
+    "action": "Buy",
+    "entry_price": 3200.75,
+    "target_price": 3300.0,
+    "stop_loss": 3150.5
   },
   {
-    "ticker": "BTC",
-    "setup": "Ascending Triangle Breakout",
-    "direction": "Call",
-    "strike": 45000,
-    "expiry": "2025-06-21",
-    "entry": 3000,
-    "target": 6000,
-    "stop": 2000,
-    "confidence": "High",
-    "rationale": "BTC is forming an ascending triangle pattern with higher lows and a resistance level. Positive sentiment around institutional adoption and decreasing supply indicate a potential breakout to the upside in the crypto market."
+    "stock": "GOOGL",
+    "action": "Buy",
+    "entry_price": 2800.5,
+    "target_price": 2850.0,
+    "stop_loss": 2775.25
+  },
+  {
+    "stock": "TSLA",
+    "action": "Buy",
+    "entry_price": 700.0,
+    "target_price": 725.0,
+    "stop_loss": 690.5
+  },
+  {
+    "stock": "NFLX",
+    "action": "Buy",
+    "entry_price": 600.25,
+    "target_price": 620.0,
+    "stop_loss": 595.5
+  },
+  {
+    "stock": "MSFT",
+    "action": "Buy",
+    "entry_price": 270.75,
+    "target_price": 275.5,
+    "stop_loss": 268.0
+  },
+  {
+    "stock": "NVDA",
+    "action": "Buy",
+    "entry_price": 650.0,
+    "target_price": 675.0,
+    "stop_loss": 640.5
+  },
+  {
+    "stock": "FB",
+    "action": "Buy",
+    "entry_price": 320.5,
+    "target_price": 330.0,
+    "stop_loss": 315.75
+  },
+  {
+    "stock": "BABA",
+    "action": "Buy",
+    "entry_price": 200.25,
+    "target_price": 210.0,
+    "stop_loss": 197.5
+  },
+  {
+    "stock": "AMD",
+    "action": "Buy",
+    "entry_price": 100.75,
+    "target_price": 105.0,
+    "stop_loss": 99.0
   }
 ]

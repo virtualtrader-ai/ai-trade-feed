@@ -1,38 +1,72 @@
 [
   {
-    "ticker": "AAPL",
-    "setup": "Earnings Play",
-    "direction": "Call",
-    "strike": 130,
-    "expiry": "2025-05-17",
-    "entry": 1.5,
-    "target": 3.0,
-    "stop": 0.8,
-    "confidence": "High",
-    "rationale": "AAPL is expected to release positive earnings today, with analysts forecasting strong revenue growth. This could lead to a quick spike in the stock price, making short-term call options an attractive trade."
+    "stock": "AAPL",
+    "strategy": "long call",
+    "expiration_date": "2025-06-21",
+    "strike_price": 150,
+    "contract_price": 5.5
   },
   {
-    "ticker": "TSLA",
-    "setup": "Technical Breakout",
-    "direction": "Call",
-    "strike": 650,
-    "expiry": "2025-05-17",
-    "entry": 2.2,
-    "target": 4.5,
-    "stop": 1.0,
-    "confidence": "Medium",
-    "rationale": "TSLA has broken out of a key resistance level with high trading volume, indicating strong bullish momentum. This breakout could lead to a continuation of the uptrend, making call options an enticing trade."
+    "stock": "TSLA",
+    "strategy": "long put",
+    "expiration_date": "2025-06-21",
+    "strike_price": 700,
+    "contract_price": 8.75
   },
   {
-    "ticker": "NFLX",
-    "setup": "Volatility Squeeze",
-    "direction": "Put",
-    "strike": 500,
-    "expiry": "2025-05-17",
-    "entry": 3.0,
-    "target": 6.0,
-    "stop": 1.5,
-    "confidence": "High",
-    "rationale": "NFLX has been trading in a tight range with decreasing volatility, suggesting a potential breakout to the downside. A put option trade can capitalize on this expected move with high profit potential."
+    "stock": "AMZN",
+    "strategy": "short straddle",
+    "expiration_date": "2025-06-21",
+    "strike_price": 3500,
+    "contract_price": 45.25
+  },
+  {
+    "stock": "GOOGL",
+    "strategy": "long call",
+    "expiration_date": "2025-06-21",
+    "strike_price": 2500,
+    "contract_price": 30.8
+  },
+  {
+    "stock": "NFLX",
+    "strategy": "long put",
+    "expiration_date": "2025-06-21",
+    "strike_price": 500,
+    "contract_price": 6.5
+  },
+  {
+    "stock": "MSFT",
+    "strategy": "short strangle",
+    "expiration_date": "2025-06-21",
+    "strike_price": 250,
+    "contract_price": 10.5
+  },
+  {
+    "stock": "FB",
+    "strategy": "long call",
+    "expiration_date": "2025-06-21",
+    "strike_price": 300,
+    "contract_price": 8.2
+  },
+  {
+    "stock": "NVDA",
+    "strategy": "long put",
+    "expiration_date": "2025-06-21",
+    "strike_price": 600,
+    "contract_price": 12.75
+  },
+  {
+    "stock": "BABA",
+    "strategy": "short straddle",
+    "expiration_date": "2025-06-21",
+    "strike_price": 200,
+    "contract_price": 15.4
+  },
+  {
+    "stock": "SPY",
+    "strategy": "long call",
+    "expiration_date": "2025-06-21",
+    "strike_price": 420,
+    "contract_price": 3.9
   }
 ]
