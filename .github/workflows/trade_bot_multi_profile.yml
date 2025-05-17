@@ -2,8 +2,8 @@ name: Generate and Push Multi-Profile Trades
 
 on:
   schedule:
-    - cron: '0 13 * * *'
-  workflow_dispatch:
+    - cron: '0 13 * * *'  # Runs daily at 6 AM PST
+  workflow_dispatch:         # Allows manual trigger from GitHub Actions tab
 
 jobs:
   generate-trades:
