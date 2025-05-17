@@ -7,12 +7,12 @@ import time
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 profiles = {
-    "person_a": {"name": "Luna - The Momentum Trader", "prompt_overlay": "Focus on stocks showing unusual breakout volume, recent earnings beats, or sector momentum shifts."},
-    "person_b": {"name": "Mark - The Conservative Investor", "prompt_overlay": "Focus on fundamentally strong companies with dividend support, low beta, and recent insider buying or upgrades."},
-    "person_c": {"name": "Riley - The Catalyst Trader", "prompt_overlay": "Focus on stocks with upcoming earnings, FDA events, regulatory rulings, or notable institutional flows."},
-    "person_d": {"name": "Zara - The Defensive Strategist", "prompt_overlay": "Focus on healthcare, utilities, or consumer staples stocks outperforming during market pullbacks or high VIX environments."},
-    "person_e": {"name": "Leo - The High-Risk Options Specialist", "prompt_overlay": "Focus on speculative small caps with unusual options flow, high implied volatility, or rumor-driven moves."},
-    "person_f": {"name": "The Political Figure Trader", "prompt_overlay": "Focus on trades inspired by recent financial disclosures of U.S. politicians, analyzing the patterns and sectors they favor."}
+    "person_a": {"name": "Luna - The Momentum Trader", "prompt_overlay": "Focus on momentum stocks and options showing unusual breakout volume, recent earnings beats, or sector momentum shifts."},
+    "person_b": {"name": "Mark - The Conservative Investor", "prompt_overlay": "Focus on fundamentally strong stocks and conservative option strategies backed by insider buying, dividends, and low volatility setups."},
+    "person_c": {"name": "Riley - The Catalyst Trader", "prompt_overlay": "Focus on stocks and options with upcoming earnings, FDA events, regulatory rulings, or notable institutional flows."},
+    "person_d": {"name": "Zara - The Defensive Strategist", "prompt_overlay": "Focus on stocks and options in healthcare, utilities, and staples that outperform in weak or uncertain markets."},
+    "person_e": {"name": "Leo - The High-Risk Options Specialist", "prompt_overlay": "Focus on speculative options setups with high implied volatility, short-dated expiries, and unusual options flow."},
+    "person_f": {"name": "The Political Figure Trader", "prompt_overlay": "Focus on trades inspired by recent financial disclosures of U.S. politicians, such as Nancy Pelosi, analyzing and mimicking their trading behavior. Always specify the politician's name and include the source of disclosure."}
 }
 
 today = date.today().strftime('%Y-%m-%d')
@@ -37,20 +37,21 @@ if "Market Pulse" not in system_metrics["profiles"]:
 # Market Pulse
 try:
     market_pulse_prompt = f"""
-You are a professional global market strategist.
+You are a global market strategist.
 
-Generate an organized, detailed, and human-friendly Market Pulse report for today ({today}).
+Generate a detailed, organized, actionable Market Pulse report for today ({today}).
 
-Structure into:
+Include:
 1. General Market Sentiment
 2. Key Economic Drivers
-3. Sector Leadership & Themes
+3. Sector Leadership & Themes (mention tickers)
 4. Geopolitical & Macro Risks
-5. Notable Institutional & Political Activity
-6. Short-Term Trading Bias
-7. Important Calendar Events
+5. Notable Institutional & Political Activity (with links if available)
+6. Short-Term Trading Bias (what to watch intraday)
+7. Important Calendar Events (include dates)
 
-Be clear, engaging, actionable. Length: 300-500 words.
+Be specific. Mention stocks, sectors, flows, political actions. If possible, include **links to sources or reports used**.
+Target length: 500-700 words.
 """
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
@@ -78,23 +79,27 @@ except Exception as e:
 # Trades per profile
 for profile_id, profile in profiles.items():
     prompt = f"""
-You are an elite stock and options trader.
+You are an elite trader.
 
 For persona {profile['name']}:
 {profile['prompt_overlay']}
 
-Generate exactly 10 unique, diverse trade ideas for today ({today}).
+Generate 5 stock trades and 5 options trades for today ({today}).
 
 Rules:
-- Mix of short-term trades (intraday to 1 week) and longer-term trades (6 months to 1 year).
-- Each trade must have an "estimated_duration" field.
-- Include catalysts like news, earnings, insider buying, political trades, macro.
-- Each rationale must be at least 5 detailed sentences.
-- Format as strict JSON:
+- Specify type as "Stock" or "Option".
+- Each must have an "estimated_duration" field (example: "1 day", "2 weeks", "6 months").
+- Each must have a "source_link" or "source_description" explaining where the information came from.
+- For Political Figure Trader: include the politician's name.
+- Include catalysts like news, earnings, political disclosures, insider buying, unusual flow, etc.
+- Each rationale must be at least 8 detailed sentences covering all factors.
+
+Format as strict JSON:
 [
   {{
     "ticker": "SPY",
-    "setup": "Gap Fade Reversal with CPI catalyst",
+    "type": "Option",
+    "setup": "Gap Fade Reversal",
     "direction": "Put",
     "strike": 512,
     "expiry": "{today}",
@@ -103,6 +108,7 @@ Rules:
     "stop": 0.20,
     "confidence": "High",
     "estimated_duration": "1 day",
+    "source_link": "https://example.com",
     "rationale": "..."
   }}
 ]
