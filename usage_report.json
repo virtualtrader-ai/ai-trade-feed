@@ -1,12 +1,12 @@
 {
   "date": "2025-05-17",
-  "total_tokens_used": 2304,
-  "estimated_cost_usd": 0.0046,
+  "total_tokens_used": 6966,
+  "estimated_cost_usd": 0.0139,
   "profile_breakdown": {
-    "Luna - The Momentum Trader": 560,
-    "Mark - The Conservative Investor": 559,
-    "Riley - The Catalyst Trader": 355,
-    "Zara - The Defensive Strategist": 352,
-    "Leo - The Options Specialist": 478
+    "Luna - The Momentum Trader": 1392,
+    "Mark - The Conservative Investor": 1386,
+    "Riley - The Catalyst Trader": 1411,
+    "Zara - The Defensive Strategist": 1412,
+    "Leo - The High-Risk Options Specialist": 1365
   }
 }

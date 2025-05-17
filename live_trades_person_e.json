@@ -1,62 +1,122 @@
 [
   {
-    "stock": "AAPL",
-    "strategy": "call option",
-    "strike_price": 150,
-    "expiration_date": "2025-06-21"
+    "ticker": "AAPL",
+    "setup": "Earnings Run-up",
+    "direction": "Call",
+    "strike": 130,
+    "expiry": "2025-05-17",
+    "entry": 1.5,
+    "target": 3.0,
+    "stop": 0.75,
+    "confidence": "High",
+    "rationale": "AAPL has historically rallied into earnings, with increasing call volume and bullish sentiment leading up to the event."
   },
   {
-    "stock": "TSLA",
-    "strategy": "put option",
-    "strike_price": 700,
-    "expiration_date": "2025-06-21"
+    "ticker": "TSLA",
+    "setup": "Breakout Retest",
+    "direction": "Call",
+    "strike": 700,
+    "expiry": "2025-05-17",
+    "entry": 2.2,
+    "target": 4.5,
+    "stop": 1.0,
+    "confidence": "Medium",
+    "rationale": "TSLA broke out of a key resistance level and is now retesting it, with strong call flow indicating potential continuation."
   },
   {
-    "stock": "AMZN",
-    "strategy": "call option",
-    "strike_price": 3500,
-    "expiration_date": "2025-06-21"
+    "ticker": "AMZN",
+    "setup": "Volatility Crush",
+    "direction": "Put",
+    "strike": 3300,
+    "expiry": "2025-05-17",
+    "entry": 5.75,
+    "target": 10.0,
+    "stop": 3.5,
+    "confidence": "High",
+    "rationale": "AMZN IV is elevated ahead of an event, expecting a volatility crush post-event leading to a profitable put trade."
   },
   {
-    "stock": "GOOGL",
-    "strategy": "put option",
-    "strike_price": 2500,
-    "expiration_date": "2025-06-21"
+    "ticker": "NFLX",
+    "setup": "Technical Breakdown",
+    "direction": "Put",
+    "strike": 500,
+    "expiry": "2025-05-17",
+    "entry": 3.0,
+    "target": 6.0,
+    "stop": 1.5,
+    "confidence": "High",
+    "rationale": "NFLX broke below a key support level with increasing put volume, indicating further downside potential."
   },
   {
-    "stock": "NFLX",
-    "strategy": "call option",
-    "strike_price": 600,
-    "expiration_date": "2025-06-21"
+    "ticker": "NVDA",
+    "setup": "Event Driven",
+    "direction": "Call",
+    "strike": 700,
+    "expiry": "2025-05-17",
+    "entry": 4.5,
+    "target": 8.0,
+    "stop": 2.0,
+    "confidence": "High",
+    "rationale": "NVDA has an upcoming product launch event, historically leading to a price rally and increased call activity."
   },
   {
-    "stock": "MSFT",
-    "strategy": "put option",
-    "strike_price": 250,
-    "expiration_date": "2025-06-21"
+    "ticker": "GOOGL",
+    "setup": "Bullish Reversal",
+    "direction": "Call",
+    "strike": 2500,
+    "expiry": "2025-05-17",
+    "entry": 8.0,
+    "target": 15.0,
+    "stop": 4.0,
+    "confidence": "High",
+    "rationale": "GOOGL showed signs of bullish reversal with strong call flow and positive market sentiment, indicating a potential rally."
   },
   {
-    "stock": "FB",
-    "strategy": "call option",
-    "strike_price": 300,
-    "expiration_date": "2025-06-21"
+    "ticker": "MSFT",
+    "setup": "Gap Fill",
+    "direction": "Put",
+    "strike": 250,
+    "expiry": "2025-05-17",
+    "entry": 1.8,
+    "target": 3.5,
+    "stop": 0.9,
+    "confidence": "Medium",
+    "rationale": "MSFT gapped up on positive news but failed to hold gains, likely to fill the gap with increasing put activity."
   },
   {
-    "stock": "NVDA",
-    "strategy": "put option",
-    "strike_price": 700,
-    "expiration_date": "2025-06-21"
+    "ticker": "FB",
+    "setup": "Bearish Divergence",
+    "direction": "Put",
+    "strike": 300,
+    "expiry": "2025-05-17",
+    "entry": 2.5,
+    "target": 5.0,
+    "stop": 1.2,
+    "confidence": "High",
+    "rationale": "FB showing bearish divergence on technical indicators, coupled with rising put volume, indicating a potential downside move."
   },
   {
-    "stock": "BABA",
-    "strategy": "call option",
-    "strike_price": 200,
-    "expiration_date": "2025-06-21"
+    "ticker": "AMD",
+    "setup": "Short Squeeze",
+    "direction": "Call",
+    "strike": 100,
+    "expiry": "2025-05-17",
+    "entry": 1.2,
+    "target": 2.5,
+    "stop": 0.6,
+    "confidence": "High",
+    "rationale": "AMD has high short interest and potential for a short squeeze, with increasing call volume suggesting a bullish move."
   },
   {
-    "stock": "SPY",
-    "strategy": "put option",
-    "strike_price": 400,
-    "expiration_date": "2025-06-21"
+    "ticker": "PYPL",
+    "setup": "Reversal Play",
+    "direction": "Call",
+    "strike": 220,
+    "expiry": "2025-05-17",
+    "entry": 3.5,
+    "target": 7.0,
+    "stop": 1.5,
+    "confidence": "High",
+    "rationale": "PYPL showing signs of reversal after a recent pullback, with strong call flow indicating a potential bounce back to previous highs."
   }
 ]

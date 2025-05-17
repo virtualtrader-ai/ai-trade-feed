@@ -1,52 +1,122 @@
 [
   {
-    "stock": "PFE",
-    "action": "Buy",
-    "target_price": 45.75
+    "ticker": "XLV",
+    "setup": "Bullish Divergence",
+    "direction": "Call",
+    "strike": 130,
+    "expiry": "2025-05-17",
+    "entry": 1.5,
+    "target": 3.0,
+    "stop": 0.75,
+    "confidence": "Medium",
+    "rationale": "XLV showing bullish divergence on the daily chart with increasing volume and positive MACD crossover, indicating potential upside in the healthcare sector."
   },
   {
-    "stock": "JNJ",
-    "action": "Buy",
-    "target_price": 175.5
+    "ticker": "XLU",
+    "setup": "Double Bottom Reversal",
+    "direction": "Call",
+    "strike": 70,
+    "expiry": "2025-05-17",
+    "entry": 0.8,
+    "target": 2.0,
+    "stop": 0.4,
+    "confidence": "High",
+    "rationale": "XLU forming a double bottom pattern on the hourly chart with strong support at $68, suggesting a bullish reversal in utilities."
   },
   {
-    "stock": "MRK",
-    "action": "Buy",
-    "target_price": 90.25
+    "ticker": "PG",
+    "setup": "Earnings Beat Play",
+    "direction": "Call",
+    "strike": 140,
+    "expiry": "2025-05-17",
+    "entry": 1.2,
+    "target": 2.5,
+    "stop": 0.6,
+    "confidence": "High",
+    "rationale": "PG expected to beat earnings estimates based on strong consumer demand and cost-saving initiatives, presenting a bullish opportunity in consumer staples."
   },
   {
-    "stock": "UNH",
-    "action": "Buy",
-    "target_price": 450.8
+    "ticker": "JNJ",
+    "setup": "Breakout Retest",
+    "direction": "Call",
+    "strike": 170,
+    "expiry": "2025-05-17",
+    "entry": 1.8,
+    "target": 3.5,
+    "stop": 0.9,
+    "confidence": "High",
+    "rationale": "JNJ breaking out above key resistance at $165 and retesting it as support, signaling a potential uptrend continuation in the healthcare sector."
   },
   {
-    "stock": "ABBV",
-    "action": "Buy",
-    "target_price": 130.6
+    "ticker": "NEE",
+    "setup": "Trendline Bounce",
+    "direction": "Call",
+    "strike": 85,
+    "expiry": "2025-05-17",
+    "entry": 1.0,
+    "target": 2.5,
+    "stop": 0.5,
+    "confidence": "Medium",
+    "rationale": "NEE bouncing off the upward trendline support with bullish momentum, indicating a potential move higher in the utilities sector."
   },
   {
-    "stock": "WBA",
-    "action": "Buy",
-    "target_price": 55.4
+    "ticker": "WBA",
+    "setup": "Gap Fill Reversal",
+    "direction": "Call",
+    "strike": 55,
+    "expiry": "2025-05-17",
+    "entry": 0.6,
+    "target": 1.5,
+    "stop": 0.3,
+    "confidence": "Medium",
+    "rationale": "WBA gap down opening being filled quickly with strong buying pressure, suggesting a reversal back to the upside in the consumer staples sector."
   },
   {
-    "stock": "DUK",
-    "action": "Buy",
-    "target_price": 105.2
+    "ticker": "UNH",
+    "setup": "Cup and Handle Breakout",
+    "direction": "Call",
+    "strike": 400,
+    "expiry": "2025-05-17",
+    "entry": 2.5,
+    "target": 5.0,
+    "stop": 1.25,
+    "confidence": "High",
+    "rationale": "UNH forming a cup and handle pattern on the daily chart with increasing volume and breakout above handle resistance, indicating a bullish continuation in healthcare."
   },
   {
-    "stock": "NEE",
-    "action": "Buy",
-    "target_price": 120.75
+    "ticker": "DUK",
+    "setup": "Fibonacci Retracement Bounce",
+    "direction": "Call",
+    "strike": 100,
+    "expiry": "2025-05-17",
+    "entry": 1.2,
+    "target": 2.8,
+    "stop": 0.6,
+    "confidence": "High",
+    "rationale": "DUK retracing to the 61.8% Fibonacci level and bouncing with strong buying interest, suggesting a potential uptrend continuation in utilities."
   },
   {
-    "stock": "SO",
-    "action": "Buy",
-    "target_price": 65.9
+    "ticker": "KO",
+    "setup": "Support Breakout",
+    "direction": "Call",
+    "strike": 60,
+    "expiry": "2025-05-17",
+    "entry": 0.7,
+    "target": 1.8,
+    "stop": 0.35,
+    "confidence": "Medium",
+    "rationale": "KO breaking above key support at $58 with increasing volume and positive RSI divergence, indicating a bullish breakout in consumer staples."
   },
   {
-    "stock": "XEL",
-    "action": "Buy",
-    "target_price": 70.3
+    "ticker": "MRK",
+    "setup": "Earnings Run-Up",
+    "direction": "Call",
+    "strike": 75,
+    "expiry": "2025-05-17",
+    "entry": 1.0,
+    "target": 2.5,
+    "stop": 0.5,
+    "confidence": "High",
+    "rationale": "MRK expected to have a strong earnings run-up based on positive drug trial results and analyst upgrades, presenting a bullish opportunity in the healthcare sector."
   }
 ]

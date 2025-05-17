@@ -1,72 +1,122 @@
 [
   {
-    "stock": "AAPL",
-    "action": "Buy",
-    "entry_price": 145.5,
-    "target_price": 155.0,
-    "stop_loss": 142.0
+    "ticker": "AAPL",
+    "setup": "Dividend Play",
+    "direction": "Call",
+    "strike": 135,
+    "expiry": "2025-05-17",
+    "entry": 2.5,
+    "target": 4.0,
+    "stop": 1.8,
+    "confidence": "Medium",
+    "rationale": "AAPL recently announced a dividend increase, coupled with strong insider buying. This creates a bullish setup for a potential swing trade."
   },
   {
-    "stock": "MSFT",
-    "action": "Buy",
-    "entry_price": 250.0,
-    "target_price": 265.0,
-    "stop_loss": 245.0
+    "ticker": "MSFT",
+    "setup": "Low Volatility Breakout",
+    "direction": "Call",
+    "strike": 250,
+    "expiry": "2025-05-17",
+    "entry": 3.2,
+    "target": 5.0,
+    "stop": 2.5,
+    "confidence": "High",
+    "rationale": "MSFT has been trading in a tight range with low volatility. Insider buying and positive market sentiment suggest a breakout to the upside."
   },
   {
-    "stock": "GOOGL",
-    "action": "Buy",
-    "entry_price": 2500.0,
-    "target_price": 2650.0,
-    "stop_loss": 2450.0
+    "ticker": "JNJ",
+    "setup": "Insider Buying Catalyst",
+    "direction": "Call",
+    "strike": 170,
+    "expiry": "2025-05-17",
+    "entry": 1.8,
+    "target": 3.0,
+    "stop": 1.2,
+    "confidence": "High",
+    "rationale": "Recent insider buying in JNJ has sparked investor interest. A bullish setup is forming for a potential swing trade."
   },
   {
-    "stock": "AMZN",
-    "action": "Buy",
-    "entry_price": 3200.0,
-    "target_price": 3350.0,
-    "stop_loss": 3150.0
+    "ticker": "KO",
+    "setup": "Dividend Reinvestment",
+    "direction": "Call",
+    "strike": 55,
+    "expiry": "2025-05-17",
+    "entry": 0.8,
+    "target": 1.5,
+    "stop": 0.5,
+    "confidence": "Medium",
+    "rationale": "KO's upcoming dividend payment and reinvestment plan could drive the stock higher. A call option provides a conservative play on this potential upside."
   },
   {
-    "stock": "TSLA",
-    "action": "Buy",
-    "entry_price": 650.0,
-    "target_price": 700.0,
-    "stop_loss": 630.0
+    "ticker": "PG",
+    "setup": "Stable Dividend Growth",
+    "direction": "Call",
+    "strike": 140,
+    "expiry": "2025-05-17",
+    "entry": 2.0,
+    "target": 3.5,
+    "stop": 1.5,
+    "confidence": "High",
+    "rationale": "PG's consistent dividend growth and stable performance make it an attractive candidate for a bullish swing trade."
   },
   {
-    "stock": "NVDA",
-    "action": "Buy",
-    "entry_price": 650.0,
-    "target_price": 700.0,
-    "stop_loss": 630.0
+    "ticker": "VZ",
+    "setup": "Low Volatility Breakout",
+    "direction": "Call",
+    "strike": 60,
+    "expiry": "2025-05-17",
+    "entry": 1.2,
+    "target": 2.5,
+    "stop": 0.8,
+    "confidence": "Medium",
+    "rationale": "VZ has been trading in a tight range with low volatility. Positive market sentiment and potential upside catalysts suggest a breakout to the upside."
   },
   {
-    "stock": "JPM",
-    "action": "Buy",
-    "entry_price": 150.0,
-    "target_price": 160.0,
-    "stop_loss": 145.0
+    "ticker": "T",
+    "setup": "Dividend Yield Play",
+    "direction": "Call",
+    "strike": 30,
+    "expiry": "2025-05-17",
+    "entry": 0.5,
+    "target": 1.2,
+    "stop": 0.3,
+    "confidence": "Medium",
+    "rationale": "T's high dividend yield and recent insider buying create a bullish setup for a potential swing trade."
   },
   {
-    "stock": "V",
-    "action": "Buy",
-    "entry_price": 220.0,
-    "target_price": 235.0,
-    "stop_loss": 215.0
+    "ticker": "XOM",
+    "setup": "Energy Sector Rebound",
+    "direction": "Call",
+    "strike": 65,
+    "expiry": "2025-05-17",
+    "entry": 1.5,
+    "target": 3.0,
+    "stop": 1.0,
+    "confidence": "High",
+    "rationale": "XOM is poised for a rebound in the energy sector, supported by insider buying and improving market conditions. A call option provides exposure to potential upside."
   },
   {
-    "stock": "DIS",
-    "action": "Buy",
-    "entry_price": 170.0,
-    "target_price": 180.0,
-    "stop_loss": 165.0
+    "ticker": "WMT",
+    "setup": "Retail Sector Strength",
+    "direction": "Call",
+    "strike": 150,
+    "expiry": "2025-05-17",
+    "entry": 2.5,
+    "target": 4.0,
+    "stop": 1.8,
+    "confidence": "High",
+    "rationale": "WMT's strong performance in the retail sector, coupled with insider buying, creates a bullish setup for a potential swing trade."
   },
   {
-    "stock": "BABA",
-    "action": "Buy",
-    "entry_price": 200.0,
-    "target_price": 215.0,
-    "stop_loss": 195.0
+    "ticker": "CSCO",
+    "setup": "Tech Sector Recovery",
+    "direction": "Call",
+    "strike": 55,
+    "expiry": "2025-05-17",
+    "entry": 1.0,
+    "target": 2.5,
+    "stop": 0.7,
+    "confidence": "Medium",
+    "rationale": "CSCO is showing signs of recovery in the tech sector, supported by insider buying and positive market sentiment. A call option provides exposure to potential upside."
   }
 ]

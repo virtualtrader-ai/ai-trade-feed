@@ -1,52 +1,122 @@
 [
   {
-    "stock": "AAPL",
-    "action": "Buy",
-    "target_price": 180.5
+    "ticker": "AAPL",
+    "setup": "Earnings Beat Play",
+    "direction": "Call",
+    "strike": 135,
+    "expiry": "2025-05-17",
+    "entry": 2.5,
+    "target": 5.0,
+    "stop": 1.5,
+    "confidence": "High",
+    "rationale": "AAPL is expected to beat earnings estimates based on strong iPhone sales and services growth. Positive sentiment and technical breakout support a bullish call option play."
   },
   {
-    "stock": "TSLA",
-    "action": "Sell",
-    "target_price": 900.25
+    "ticker": "AMZN",
+    "setup": "FDA Approval Catalyst",
+    "direction": "Call",
+    "strike": 3500,
+    "expiry": "2025-05-17",
+    "entry": 15.0,
+    "target": 30.0,
+    "stop": 10.0,
+    "confidence": "High",
+    "rationale": "AMZN's new drug received FDA approval, leading to a potential surge in stock price. Bullish call option play with high upside potential."
   },
   {
-    "stock": "AMZN",
-    "action": "Buy",
-    "target_price": 3500.75
+    "ticker": "TSLA",
+    "setup": "Battery Day Speculation",
+    "direction": "Call",
+    "strike": 700,
+    "expiry": "2025-05-17",
+    "entry": 8.0,
+    "target": 20.0,
+    "stop": 5.0,
+    "confidence": "High",
+    "rationale": "TSLA's upcoming Battery Day event is expected to unveil groundbreaking technology. Speculative call option play with potential for significant gains."
   },
   {
-    "stock": "GOOGL",
-    "action": "Buy",
-    "target_price": 2800.0
+    "ticker": "NFLX",
+    "setup": "Content Partnership Announcement",
+    "direction": "Call",
+    "strike": 600,
+    "expiry": "2025-05-17",
+    "entry": 5.5,
+    "target": 12.0,
+    "stop": 3.0,
+    "confidence": "High",
+    "rationale": "NFLX is rumored to announce a major content partnership, driving excitement among investors. Bullish call option play with favorable risk/reward ratio."
   },
   {
-    "stock": "NFLX",
-    "action": "Sell",
-    "target_price": 600.2
+    "ticker": "GOOGL",
+    "setup": "Antitrust Settlement News",
+    "direction": "Call",
+    "strike": 2500,
+    "expiry": "2025-05-17",
+    "entry": 12.0,
+    "target": 25.0,
+    "stop": 8.0,
+    "confidence": "High",
+    "rationale": "GOOGL is close to settling a long-standing antitrust case, which could boost investor confidence. Bullish call option play anticipating positive news impact."
   },
   {
-    "stock": "FB",
-    "action": "Buy",
-    "target_price": 350.8
+    "ticker": "MSFT",
+    "setup": "Cloud Computing Acquisition",
+    "direction": "Call",
+    "strike": 300,
+    "expiry": "2025-05-17",
+    "entry": 4.5,
+    "target": 10.0,
+    "stop": 2.0,
+    "confidence": "High",
+    "rationale": "MSFT is rumored to acquire a leading cloud computing company, signaling growth potential. Bullish call option play on acquisition speculation."
   },
   {
-    "stock": "MSFT",
-    "action": "Buy",
-    "target_price": 290.4
+    "ticker": "NVDA",
+    "setup": "Chip Shortage Resolution",
+    "direction": "Call",
+    "strike": 700,
+    "expiry": "2025-05-17",
+    "entry": 9.0,
+    "target": 18.0,
+    "stop": 5.0,
+    "confidence": "High",
+    "rationale": "NVDA is expected to announce solutions to the global chip shortage, boosting stock price. Bullish call option play on positive resolution news."
   },
   {
-    "stock": "NVDA",
-    "action": "Sell",
-    "target_price": 800.6
+    "ticker": "FB",
+    "setup": "Metaverse Expansion Announcement",
+    "direction": "Call",
+    "strike": 350,
+    "expiry": "2025-05-17",
+    "entry": 3.0,
+    "target": 8.0,
+    "stop": 1.5,
+    "confidence": "High",
+    "rationale": "FB is set to unveil plans for expanding its metaverse presence, driving investor interest. Bullish call option play on growth announcement."
   },
   {
-    "stock": "AMD",
-    "action": "Buy",
-    "target_price": 120.3
+    "ticker": "AMD",
+    "setup": "New Product Launch",
+    "direction": "Call",
+    "strike": 120,
+    "expiry": "2025-05-17",
+    "entry": 2.5,
+    "target": 6.0,
+    "stop": 1.0,
+    "confidence": "High",
+    "rationale": "AMD is launching a highly anticipated new product, expected to drive sales and market share. Bullish call option play on product launch momentum."
   },
   {
-    "stock": "BABA",
-    "action": "Sell",
-    "target_price": 200.5
+    "ticker": "PYPL",
+    "setup": "Digital Currency Integration",
+    "direction": "Call",
+    "strike": 250,
+    "expiry": "2025-05-17",
+    "entry": 4.0,
+    "target": 10.0,
+    "stop": 2.0,
+    "confidence": "High",
+    "rationale": "PYPL is rumored to integrate digital currency payments, potentially increasing user adoption. Bullish call option play on positive integration news."
   }
 ]
