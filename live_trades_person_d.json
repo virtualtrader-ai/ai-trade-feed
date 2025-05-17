@@ -1,0 +1,38 @@
+[
+  {
+    "ticker": "MRK",
+    "setup": "Bullish Breakout",
+    "direction": "Call",
+    "strike": 85,
+    "expiry": "2025-06-21",
+    "entry": 2.5,
+    "target": 4.2,
+    "stop": 1.8,
+    "confidence": "Medium",
+    "rationale": "MRK has been consolidating near key resistance levels with increasing volume, indicating potential for a breakout. Positive news on a new drug approval is expected to act as a catalyst for upward movement in the stock."
+  },
+  {
+    "ticker": "NEE",
+    "setup": "Trend Continuation",
+    "direction": "Call",
+    "strike": 100,
+    "expiry": "2025-06-21",
+    "entry": 3.8,
+    "target": 5.5,
+    "stop": 2.5,
+    "confidence": "High",
+    "rationale": "NEE has been exhibiting strong bullish momentum, forming higher highs and higher lows. With the sector being defensive, NEE is likely to outperform in uncertain markets, making it a favorable trade for potential upside."
+  },
+  {
+    "ticker": "PG",
+    "setup": "Earnings Play",
+    "direction": "Call",
+    "strike": 130,
+    "expiry": "2025-06-21",
+    "entry": 1.2,
+    "target": 2.8,
+    "stop": 0.8,
+    "confidence": "High",
+    "rationale": "PG is set to release earnings soon, and historical data suggests a positive earnings surprise. With defensive sectors like staples being favored in weak markets, a bullish bias on PG provides a high-reward opportunity."
+  }
+]

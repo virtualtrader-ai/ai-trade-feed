@@ -1,0 +1,38 @@
+[
+  {
+    "ticker": "AAPL",
+    "setup": "Earnings Beat",
+    "direction": "Call",
+    "strike": 140,
+    "expiry": "2025-05-17",
+    "entry": 2.5,
+    "target": 5.0,
+    "stop": 1.5,
+    "confidence": "High",
+    "rationale": "AAPL is expected to release strong earnings results today, with analysts predicting a beat. Positive sentiment and potential upside surprise could drive the stock price higher, making a call option a high-reward trade."
+  },
+  {
+    "ticker": "AMZN",
+    "setup": "FDA Approval",
+    "direction": "Call",
+    "strike": 3500,
+    "expiry": "2025-05-17",
+    "entry": 15.0,
+    "target": 30.0,
+    "stop": 10.0,
+    "confidence": "Medium",
+    "rationale": "AMZN is awaiting FDA approval for a new product, and positive news could lead to a significant price increase. A call option at a higher strike price allows for potential high returns with limited downside risk."
+  },
+  {
+    "ticker": "TSLA",
+    "setup": "Catalyst Event",
+    "direction": "Put",
+    "strike": 600,
+    "expiry": "2025-05-17",
+    "entry": 8.5,
+    "target": 15.0,
+    "stop": 5.0,
+    "confidence": "High",
+    "rationale": "TSLA is facing a negative catalyst event today, such as a product recall or CEO controversy. This could lead to a sharp decline in stock price, making a put option at a lower strike price a high-reward trade opportunity."
+  }
+]

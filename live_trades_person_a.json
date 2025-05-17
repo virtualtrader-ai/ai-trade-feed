@@ -1,0 +1,38 @@
+[
+  {
+    "ticker": "AAPL",
+    "setup": "Bullish Flag Breakout",
+    "direction": "Call",
+    "strike": 140,
+    "expiry": "2025-05-21",
+    "entry": 2.5,
+    "target": 4.0,
+    "stop": 1.8,
+    "confidence": "High",
+    "rationale": "AAPL has been consolidating in a tight range forming a bullish flag pattern. With increasing volume on the breakout and positive market sentiment towards tech stocks, this trade has a high potential for a strong upward move."
+  },
+  {
+    "ticker": "TSLA",
+    "setup": "Double Bottom Reversal",
+    "direction": "Call",
+    "strike": 800,
+    "expiry": "2025-05-21",
+    "entry": 12.5,
+    "target": 17.0,
+    "stop": 9.8,
+    "confidence": "Medium",
+    "rationale": "TSLA has formed a double bottom pattern at a key support level with increasing buying pressure. Positive news catalysts in the EV sector and breakout volume support the potential for a strong reversal move."
+  },
+  {
+    "ticker": "BTC",
+    "setup": "Symmetrical Triangle Breakout",
+    "direction": "Call",
+    "strike": 45000,
+    "expiry": "2025-05-21",
+    "entry": 2200,
+    "target": 2800,
+    "stop": 2000,
+    "confidence": "High",
+    "rationale": "BTC has been consolidating in a symmetrical triangle pattern with decreasing volatility. A breakout above the upper trendline with strong volume and positive sentiment in the crypto market indicates a high probability for a bullish continuation."
+  }
+]

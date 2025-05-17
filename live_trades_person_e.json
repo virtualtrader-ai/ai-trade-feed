@@ -1,0 +1,38 @@
+[
+  {
+    "ticker": "AAPL",
+    "setup": "Earnings Run-Up",
+    "direction": "Call",
+    "strike": 125,
+    "expiry": "2025-05-17",
+    "entry": 1.5,
+    "target": 3.0,
+    "stop": 0.75,
+    "confidence": "Medium",
+    "rationale": "AAPL is set to report earnings next week, historically showing a run-up in stock price leading to the event. With increasing call volume and positive sentiment, this trade aims to capture the pre-earnings momentum."
+  },
+  {
+    "ticker": "TSLA",
+    "setup": "Technical Breakout",
+    "direction": "Call",
+    "strike": 700,
+    "expiry": "2025-05-17",
+    "entry": 2.8,
+    "target": 5.5,
+    "stop": 1.5,
+    "confidence": "High",
+    "rationale": "TSLA has broken out of a key resistance level with strong volume and positive price action. The bullish trend is supported by increasing call flow and a potential short squeeze, making this a high-reward setup."
+  },
+  {
+    "ticker": "AMZN",
+    "setup": "Event Driven",
+    "direction": "Put",
+    "strike": 3200,
+    "expiry": "2025-05-17",
+    "entry": 4.5,
+    "target": 8.0,
+    "stop": 2.0,
+    "confidence": "High",
+    "rationale": "AMZN is facing regulatory scrutiny with a pending antitrust decision looming. This uncertainty has led to increased put activity and a bearish sentiment. The trade aims to capitalize on the downside potential ahead of the event."
+  }
+]
