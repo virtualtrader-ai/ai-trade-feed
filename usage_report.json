@@ -1,12 +1,53 @@
 {
   "date": "2025-05-17",
-  "total_tokens_used": 6966,
-  "estimated_cost_usd": 0.0139,
+  "total_tokens_used": 9673,
+  "estimated_cost_usd": 0.0193,
   "profile_breakdown": {
-    "Luna - The Momentum Trader": 1392,
-    "Mark - The Conservative Investor": 1386,
-    "Riley - The Catalyst Trader": 1411,
-    "Zara - The Defensive Strategist": 1412,
-    "Leo - The High-Risk Options Specialist": 1365
+    "Luna - The Momentum Trader": {
+      "tokens_this_run": 1819,
+      "estimated_cost_this_run": 0.0036
+    },
+    "Mark - The Conservative Investor": {
+      "tokens_this_run": 1985,
+      "estimated_cost_this_run": 0.004
+    },
+    "Riley - The Catalyst Trader": {
+      "tokens_this_run": 2063,
+      "estimated_cost_this_run": 0.0041
+    },
+    "Zara - The Defensive Strategist": {
+      "tokens_this_run": 1821,
+      "estimated_cost_this_run": 0.0036
+    },
+    "Leo - The High-Risk Options Specialist": {
+      "tokens_this_run": 1985,
+      "estimated_cost_this_run": 0.004
+    }
+  },
+  "cumulative_metrics": {
+    "total_tokens": 9673,
+    "total_cost_usd": 0.019346000000000002,
+    "profiles": {
+      "Luna - The Momentum Trader": {
+        "tokens": 1819,
+        "cost_usd": 0.003638
+      },
+      "Mark - The Conservative Investor": {
+        "tokens": 1985,
+        "cost_usd": 0.0039700000000000004
+      },
+      "Riley - The Catalyst Trader": {
+        "tokens": 2063,
+        "cost_usd": 0.004126
+      },
+      "Zara - The Defensive Strategist": {
+        "tokens": 1821,
+        "cost_usd": 0.003642
+      },
+      "Leo - The High-Risk Options Specialist": {
+        "tokens": 1985,
+        "cost_usd": 0.0039700000000000004
+      }
+    }
   }
 }

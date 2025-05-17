@@ -1,122 +1,122 @@
 [
   {
     "ticker": "AAPL",
-    "setup": "Dividend Play",
+    "setup": "Bullish Flag Breakout with WWDC catalyst",
     "direction": "Call",
-    "strike": 135,
+    "strike": 145,
     "expiry": "2025-05-17",
     "entry": 2.5,
-    "target": 4.0,
+    "target": 4.5,
     "stop": 1.8,
     "confidence": "Medium",
-    "rationale": "AAPL recently announced a dividend increase, coupled with strong insider buying. This creates a bullish setup for a potential swing trade."
+    "rationale": "AAPL has been consolidating in a bullish flag pattern ahead of its highly anticipated WWDC event. With positive sentiment surrounding potential product announcements and upgrades, there is a high probability of a breakout to the upside. Technical indicators also support this move, with increasing volume and strong relative strength compared to the broader market."
   },
   {
     "ticker": "MSFT",
-    "setup": "Low Volatility Breakout",
+    "setup": "Earnings Beat Play with Insider Buying",
     "direction": "Call",
-    "strike": 250,
+    "strike": 300,
     "expiry": "2025-05-17",
-    "entry": 3.2,
-    "target": 5.0,
-    "stop": 2.5,
+    "entry": 4.2,
+    "target": 6.5,
+    "stop": 3.0,
     "confidence": "High",
-    "rationale": "MSFT has been trading in a tight range with low volatility. Insider buying and positive market sentiment suggest a breakout to the upside."
+    "rationale": "MSFT is set to report earnings today, and recent insider buying activity suggests confidence in a positive surprise. The stock has been trending higher leading up to the earnings release, indicating market expectations are bullish. With strong sector tailwinds and overall market momentum, a call option play on a potential earnings beat presents a high probability trade opportunity."
+  },
+  {
+    "ticker": "TSLA",
+    "setup": "Bearish Reversal on Overbought Conditions",
+    "direction": "Put",
+    "strike": 700,
+    "expiry": "2025-05-17",
+    "entry": 8.5,
+    "target": 12.0,
+    "stop": 6.0,
+    "confidence": "High",
+    "rationale": "TSLA has been exhibiting signs of overbought conditions, with RSI reaching extreme levels and price action showing signs of exhaustion. Additionally, recent negative news regarding production delays and supply chain issues could act as catalysts for a bearish reversal. With high implied volatility and increasing put volume, a put option play targeting a pullback from overextended levels presents a compelling risk-reward opportunity."
+  },
+  {
+    "ticker": "AMZN",
+    "setup": "Gap Fill Reversal with Prime Day Catalyst",
+    "direction": "Call",
+    "strike": 3500,
+    "expiry": "2025-05-17",
+    "entry": 25.0,
+    "target": 40.0,
+    "stop": 18.0,
+    "confidence": "Medium",
+    "rationale": "AMZN recently gapped down on profit-taking but has found support at key technical levels. With Prime Day approaching, there is anticipation for strong sales figures and revenue growth, which could act as a positive catalyst for the stock. The gap fill reversal setup, combined with improving market breadth and sector rotation into tech, presents a favorable risk-reward opportunity for a call option play."
+  },
+  {
+    "ticker": "GOOGL",
+    "setup": "Breakout on Antitrust Settlement News",
+    "direction": "Call",
+    "strike": 2800,
+    "expiry": "2025-05-17",
+    "entry": 35.0,
+    "target": 50.0,
+    "stop": 25.0,
+    "confidence": "High",
+    "rationale": "GOOGL is poised for a breakout following news of a favorable antitrust settlement, alleviating regulatory concerns that have weighed on the stock. The technical setup shows a clear breakout above key resistance levels, indicating strong bullish momentum. With improving market sentiment towards big tech stocks and sector rotation into growth names, a call option play targeting further upside potential presents a high probability trade opportunity."
   },
   {
     "ticker": "JNJ",
-    "setup": "Insider Buying Catalyst",
+    "setup": "Dividend Support Bounce Play",
     "direction": "Call",
     "strike": 170,
     "expiry": "2025-05-17",
-    "entry": 1.8,
+    "entry": 2.8,
+    "target": 4.5,
+    "stop": 1.5,
+    "confidence": "Medium",
+    "rationale": "JNJ has strong dividend support and a history of bouncing off key support levels. With recent market volatility and rotation into defensive sectors, there is potential for a bounce back to previous highs. The stock's low beta and defensive nature make it an attractive play for conservative investors seeking stability and income generation. A call option play targeting a bounce off dividend support levels presents a favorable risk-reward opportunity."
+  },
+  {
+    "ticker": "PG",
+    "setup": "Earnings Beat Play with Defensive Sector Rotation",
+    "direction": "Call",
+    "strike": 140,
+    "expiry": "2025-05-17",
+    "entry": 1.5,
     "target": 3.0,
-    "stop": 1.2,
+    "stop": 0.8,
     "confidence": "High",
-    "rationale": "Recent insider buying in JNJ has sparked investor interest. A bullish setup is forming for a potential swing trade."
+    "rationale": "PG is set to report earnings, and with defensive sector rotation in play, there is anticipation for a positive surprise. The stock has been resilient in the face of market volatility, indicating strong investor confidence. With low beta and stable dividend payouts, PG presents a safe haven for investors seeking defensive plays in uncertain market conditions. A call option play on a potential earnings beat offers a high probability trade opportunity."
   },
   {
     "ticker": "KO",
-    "setup": "Dividend Reinvestment",
+    "setup": "Breakout on ESG Investment Inflows",
     "direction": "Call",
-    "strike": 55,
+    "strike": 60,
     "expiry": "2025-05-17",
     "entry": 0.8,
     "target": 1.5,
     "stop": 0.5,
     "confidence": "Medium",
-    "rationale": "KO's upcoming dividend payment and reinvestment plan could drive the stock higher. A call option provides a conservative play on this potential upside."
-  },
-  {
-    "ticker": "PG",
-    "setup": "Stable Dividend Growth",
-    "direction": "Call",
-    "strike": 140,
-    "expiry": "2025-05-17",
-    "entry": 2.0,
-    "target": 3.5,
-    "stop": 1.5,
-    "confidence": "High",
-    "rationale": "PG's consistent dividend growth and stable performance make it an attractive candidate for a bullish swing trade."
+    "rationale": "KO is poised for a breakout as ESG investment inflows drive demand for sustainable and socially responsible companies. The stock has been consolidating near key resistance levels, indicating potential for a bullish breakout. With increasing investor focus on environmental and social governance criteria, KO's strong ESG credentials make it an attractive play for socially conscious investors. A call option play targeting a breakout on ESG investment inflows presents a compelling risk-reward opportunity."
   },
   {
     "ticker": "VZ",
-    "setup": "Low Volatility Breakout",
+    "setup": "Low Beta Dividend Support Bounce Play",
     "direction": "Call",
-    "strike": 60,
+    "strike": 55,
     "expiry": "2025-05-17",
     "entry": 1.2,
     "target": 2.5,
     "stop": 0.8,
     "confidence": "Medium",
-    "rationale": "VZ has been trading in a tight range with low volatility. Positive market sentiment and potential upside catalysts suggest a breakout to the upside."
-  },
-  {
-    "ticker": "T",
-    "setup": "Dividend Yield Play",
-    "direction": "Call",
-    "strike": 30,
-    "expiry": "2025-05-17",
-    "entry": 0.5,
-    "target": 1.2,
-    "stop": 0.3,
-    "confidence": "Medium",
-    "rationale": "T's high dividend yield and recent insider buying create a bullish setup for a potential swing trade."
+    "rationale": "VZ offers a low beta play with strong dividend support and a history of bouncing off key support levels. With recent market volatility and rotation into defensive sectors, there is potential for a bounce back to previous highs. The stock's defensive nature and stable income generation make it an attractive choice for conservative investors seeking stability. A call option play targeting a bounce off dividend support levels presents a favorable risk-reward opportunity."
   },
   {
     "ticker": "XOM",
-    "setup": "Energy Sector Rebound",
+    "setup": "Value Rebound Play on Energy Sector Strength",
     "direction": "Call",
     "strike": 65,
     "expiry": "2025-05-17",
     "entry": 1.5,
     "target": 3.0,
-    "stop": 1.0,
-    "confidence": "High",
-    "rationale": "XOM is poised for a rebound in the energy sector, supported by insider buying and improving market conditions. A call option provides exposure to potential upside."
-  },
-  {
-    "ticker": "WMT",
-    "setup": "Retail Sector Strength",
-    "direction": "Call",
-    "strike": 150,
-    "expiry": "2025-05-17",
-    "entry": 2.5,
-    "target": 4.0,
-    "stop": 1.8,
-    "confidence": "High",
-    "rationale": "WMT's strong performance in the retail sector, coupled with insider buying, creates a bullish setup for a potential swing trade."
-  },
-  {
-    "ticker": "CSCO",
-    "setup": "Tech Sector Recovery",
-    "direction": "Call",
-    "strike": 55,
-    "expiry": "2025-05-17",
-    "entry": 1.0,
-    "target": 2.5,
-    "stop": 0.7,
+    "stop": 0.8,
     "confidence": "Medium",
-    "rationale": "CSCO is showing signs of recovery in the tech sector, supported by insider buying and positive market sentiment. A call option provides exposure to potential upside."
+    "rationale": "XOM is positioned for a value rebound play as the energy sector shows signs of strength and recovery. With improving oil prices and sector rotation into energy names, XOM has the potential for a bullish breakout. The stock's low valuation and dividend yield make it an attractive play for value investors seeking upside potential. A call option play targeting a rebound on energy sector strength presents a compelling risk-reward opportunity."
   }
 ]
