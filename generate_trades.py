@@ -7,12 +7,12 @@ import time
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 profiles = {
-    "person_a": {"name": "Luna - The Momentum Trader", "prompt_overlay": "..."},
-    "person_b": {"name": "Mark - The Conservative Investor", "prompt_overlay": "..."},
-    "person_c": {"name": "Riley - The Catalyst Trader", "prompt_overlay": "..."},
-    "person_d": {"name": "Zara - The Defensive Strategist", "prompt_overlay": "..."},
-    "person_e": {"name": "Leo - The High-Risk Options Specialist", "prompt_overlay": "..."},
-    "person_f": {"name": "The Political Figure Trader", "prompt_overlay": "Focus on trades inspired by recent financial disclosures of U.S. politicians, especially congress members such as Nancy Pelosi, analyzing the patterns and sectors they favor."}
+    "person_a": {"name": "Luna - The Momentum Trader", "prompt_overlay": "Focus on stocks showing unusual breakout volume, recent earnings beats, or sector momentum shifts."},
+    "person_b": {"name": "Mark - The Conservative Investor", "prompt_overlay": "Focus on fundamentally strong companies with dividend support, low beta, and recent insider buying or upgrades."},
+    "person_c": {"name": "Riley - The Catalyst Trader", "prompt_overlay": "Focus on stocks with upcoming earnings, FDA events, regulatory rulings, or notable institutional flows."},
+    "person_d": {"name": "Zara - The Defensive Strategist", "prompt_overlay": "Focus on healthcare, utilities, or consumer staples stocks outperforming during market pullbacks or high VIX environments."},
+    "person_e": {"name": "Leo - The High-Risk Options Specialist", "prompt_overlay": "Focus on speculative small caps with unusual options flow, high implied volatility, or rumor-driven moves."},
+    "person_f": {"name": "The Political Figure Trader", "prompt_overlay": "Focus on trades inspired by recent financial disclosures of U.S. politicians, analyzing the patterns and sectors they favor."}
 }
 
 today = date.today().strftime('%Y-%m-%d')
@@ -27,29 +27,30 @@ if os.path.exists(cumulative_metrics_file):
 else:
     system_metrics = {"total_tokens": 0, "total_cost_usd": 0, "profiles": {}}
 
-# Ensure all profiles are initialized
+# Ensure profiles initialized
 for profile in profiles.values():
     if profile['name'] not in system_metrics["profiles"]:
         system_metrics["profiles"][profile['name']] = {"tokens": 0, "cost_usd": 0}
 if "Market Pulse" not in system_metrics["profiles"]:
     system_metrics["profiles"]["Market Pulse"] = {"tokens": 0, "cost_usd": 0}
 
-# Generate Market Pulse
+# Market Pulse
 try:
     market_pulse_prompt = f"""
-You are a professional market strategist.
+You are a professional global market strategist.
 
-Generate a concise, insightful, and actionable market pulse report for today ({today}).
+Generate an organized, detailed, and human-friendly Market Pulse report for today ({today}).
 
-Include:
-- General sentiment (bullish, bearish, neutral)
-- Key macroeconomic drivers
-- Sector rotations or themes
-- Geopolitical risks
-- Institutional activity
-- Important political actions impacting markets
+Structure into:
+1. General Market Sentiment
+2. Key Economic Drivers
+3. Sector Leadership & Themes
+4. Geopolitical & Macro Risks
+5. Notable Institutional & Political Activity
+6. Short-Term Trading Bias
+7. Important Calendar Events
 
-Write in TLDR style, no more than 200 words.
+Be clear, engaging, actionable. Length: 300-500 words.
 """
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
@@ -71,12 +72,10 @@ Write in TLDR style, no more than 200 words.
     system_metrics["profiles"]["Market Pulse"]["tokens"] += pulse_tokens_used
     system_metrics["profiles"]["Market Pulse"]["cost_usd"] += pulse_tokens_used / 1000 * 0.002
 
-    print(f"✅ Market Pulse generated. Tokens used: {pulse_tokens_used}")
 except Exception as e:
-    print(f"❌ Failed to generate Market Pulse: {e}")
     profile_usage["Market Pulse"] = "Failed"
 
-# Generate trades per profile
+# Trades per profile
 for profile_id, profile in profiles.items():
     prompt = f"""
 You are an elite stock and options trader.
@@ -84,11 +83,13 @@ You are an elite stock and options trader.
 For persona {profile['name']}:
 {profile['prompt_overlay']}
 
-Generate exactly 10 unique, creative, and diverse trade ideas for today ({today}).
+Generate exactly 10 unique, diverse trade ideas for today ({today}).
 
-Important:
-- Include catalysts: news, earnings, insider buying, political trades, flow data, macro.
-- Each rationale must be at least 5 detailed sentences, referencing catalysts, technicals, and psychology.
+Rules:
+- Mix of short-term trades (intraday to 1 week) and longer-term trades (6 months to 1 year).
+- Each trade must have an "estimated_duration" field.
+- Include catalysts like news, earnings, insider buying, political trades, macro.
+- Each rationale must be at least 5 detailed sentences.
 - Format as strict JSON:
 [
   {{
@@ -101,6 +102,7 @@ Important:
     "target": 1.20,
     "stop": 0.20,
     "confidence": "High",
+    "estimated_duration": "1 day",
     "rationale": "..."
   }}
 ]
@@ -114,11 +116,7 @@ Important:
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.2
             )
-
             raw_response = response.choices[0].message.content.strip()
-            if not raw_response:
-                raise ValueError("Empty response from GPT")
-
             trade_data = json.loads(raw_response)
             if len(trade_data) != 10:
                 raise ValueError(f"Expected 10 trades, got {len(trade_data)}")
@@ -138,29 +136,23 @@ Important:
             break
 
         except Exception as e:
-            print(f"❌ Attempt {attempt + 1} for {profile['name']} failed: {e}")
             time.sleep(5)
 
     if not success:
         profile_usage[profile['name']] = "Failed"
         continue
 
-    filename = f"live_trades_{profile_id}.json"
-    with open(filename, "w") as f:
+    with open(f"live_trades_{profile_id}.json", "w") as f:
         json.dump(trade_data, f, indent=2)
 
-# Save usage report and cumulative metrics
-usage_report = {
-    "date": today,
-    "total_tokens_used": total_tokens_used,
-    "estimated_cost_usd": round(total_tokens_used / 1000 * 0.002, 4),
-    "profile_breakdown": profile_usage,
-    "cumulative_metrics": system_metrics
-}
-
+# Save reports
 with open("usage_report.json", "w") as f:
-    json.dump(usage_report, f, indent=2)
+    json.dump({
+        "date": today,
+        "total_tokens_used": total_tokens_used,
+        "estimated_cost_usd": round(total_tokens_used / 1000 * 0.002, 4),
+        "profile_breakdown": profile_usage,
+        "cumulative_metrics": system_metrics
+    }, f, indent=2)
 with open(cumulative_metrics_file, "w") as f:
     json.dump(system_metrics, f, indent=2)
-
-print("✅ All trades, reports, and metrics saved.")
