@@ -6,6 +6,7 @@ import time
 import re
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+today = date.today().strftime('%Y-%m-%d')
 
 profiles = {
     "person_a": {"name": "Luna - The Momentum Trader", "prompt_overlay": "Focus on stocks and options with breakout patterns, sector momentum, and volume spikes."},
@@ -16,11 +17,12 @@ profiles = {
     "person_f": {"name": "The Political Figure Trader", "prompt_overlay": "Focus strictly on replicating trades disclosed by U.S. politicians or their relatives. Include politician name, role, and official disclosure source link."}
 }
 
-today = date.today().strftime('%Y-%m-%d')
+total_tokens = 0
+cost_per_1k = 0.002  # gpt-3.5-turbo
+profile_stats = []
 
 for profile_id, profile in profiles.items():
-    prompt = f"""
-You are an elite Wall Street trader generating hyper-accurate trade recommendations.
+    prompt = f"""You are an elite Wall Street trader generating hyper-accurate trade recommendations.
 
 For persona {profile['name']}:
 {profile['prompt_overlay']}
@@ -34,13 +36,13 @@ For each trade:
 - Include "source_link" (If no real source, say "AI Analysis")
 - For Political Figure Trader only: Include "politician": Name and role (e.g., Nancy Pelosi, House Speaker) and "disclosure_link" (realistic source link or disclosure page)
 
-Your output MUST ONLY be a valid JSON block inside triple backticks like this:
+Only output valid JSON inside triple backticks like this:
 ```json
 [your JSON here]
 ```
-Absolutely no commentary, preamble, or explanations outside the JSON block.
+Do not add any explanations, comments, or text outside the JSON block.
 Ensure the JSON is valid and parsable.
-"""
+""" 
 
     success = False
     for attempt in range(3):
@@ -51,6 +53,9 @@ Ensure the JSON is valid and parsable.
                 temperature=0.2
             )
             raw_response = response.choices[0].message.content.strip()
+            usage = response.usage
+            tokens = usage.total_tokens
+            total_tokens += tokens
 
             json_block_match = re.search(r"```json\s*(.*?)\s*```", raw_response, re.DOTALL)
             if json_block_match:
@@ -68,6 +73,12 @@ Ensure the JSON is valid and parsable.
             with open(f"live_trades_{profile_id}.json", "w") as f:
                 json.dump(trade_data, f, indent=2)
 
+            profile_stats.append({
+                "id": profile_id,
+                "name": profile["name"],
+                "tokens_used_this_run": tokens
+            })
+
             print(f"✅ Successfully generated trades for {profile['name']}")
             success = True
             break
@@ -78,3 +89,50 @@ Ensure the JSON is valid and parsable.
 
     if not success:
         print(f"❌ Failed to generate trades for {profile['name']} after 3 attempts.")
+
+# Save usage_report.json
+usage_report = {
+    "date": today,
+    "total_tokens_used": total_tokens,
+    "estimated_cost": round(total_tokens / 1000 * cost_per_1k, 5),
+    "profiles": []
+}
+
+# Update system_metrics.json
+try:
+    with open("system_metrics.json", "r") as f:
+        system_metrics = json.load(f)
+except FileNotFoundError:
+    system_metrics = {
+        "total_tokens_used": 0,
+        "total_cost": 0,
+        "profiles": {}
+    }
+
+for p in profile_stats:
+    name = p["name"]
+    tokens = p["tokens_used_this_run"]
+    cost = round(tokens / 1000 * cost_per_1k, 5)
+
+    usage_report["profiles"].append({
+        "name": name,
+        "tokens_used_this_run": tokens,
+        "total_tokens_used": system_metrics["profiles"].get(name, {}).get("total_tokens_used", 0) + tokens,
+        "total_cost": round(system_metrics["profiles"].get(name, {}).get("total_cost", 0) + cost, 5)
+    })
+
+    if name not in system_metrics["profiles"]:
+        system_metrics["profiles"][name] = {"total_tokens_used": 0, "total_cost": 0}
+    system_metrics["profiles"][name]["total_tokens_used"] += tokens
+    system_metrics["profiles"][name]["total_cost"] += cost
+
+system_metrics["total_tokens_used"] += total_tokens
+system_metrics["total_cost"] += round(total_tokens / 1000 * cost_per_1k, 5)
+
+with open("usage_report.json", "w") as f:
+    json.dump(usage_report, f, indent=2)
+
+with open("system_metrics.json", "w") as f:
+    json.dump(system_metrics, f, indent=2)
+
+print("📊 Usage and system metrics updated.")
