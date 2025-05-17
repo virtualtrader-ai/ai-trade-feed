@@ -3,6 +3,7 @@ import json
 import os
 from datetime import date
 import time
+import re
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
@@ -34,31 +35,6 @@ For each trade:
 - Include "source_link" or "source_description" (If no known source, say "AI Analysis")
 - For Political Figure Trader: Also include "politician": Name of politician & reference disclosure
 
-Output strict JSON like this:
-[
-  {{
-    "ticker": "AAPL",
-    "type": "Stock",
-    "setup": "Breakout",
-    "direction": "Buy",
-    "entry": 175.5,
-    "target": 180.0,
-    "stop": 172.8,
-    "confidence": "High",
-    "estimated_duration": "1-3 days",
-    "source_link": "https://example.com/news",
-    "rationale": "...",
-    "politician": "Nancy Pelosi" (only for political trades, otherwise omit)
-  }}
-]
-"""
-
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.2
-    )
-
-    raw_response = response.choices[0].message.content.strip()
-    with open(f"live_trades_{profile_id}.json", "w") as f:
-        json.dump(json.loads(raw_response), f, indent=2)
+Output ONLY valid JSON inside triple backticks like this:
+```json
+[your JSON here]
