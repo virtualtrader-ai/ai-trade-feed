@@ -13,14 +13,14 @@ profiles = {
     "person_c": {"name": "Riley - The Catalyst Trader", "prompt_overlay": "Focus on stocks and options with upcoming catalysts like earnings, FDA approvals."},
     "person_d": {"name": "Zara - The Defensive Strategist", "prompt_overlay": "Focus on stocks and options in safe sectors like healthcare, utilities, during uncertainty."},
     "person_e": {"name": "Leo - The High-Risk Options Specialist", "prompt_overlay": "Focus on high-risk speculative options plays with aggressive setups."},
-    "person_f": {"name": "The Political Figure Trader", "prompt_overlay": "Focus on replicating trades disclosed by U.S. politicians like Nancy Pelosi. Always include the politician's name and disclosure link."}
+    "person_f": {"name": "The Political Figure Trader", "prompt_overlay": "Focus strictly on replicating trades disclosed by U.S. politicians or their relatives. Include politician name, role, and official disclosure source link."}
 }
 
 today = date.today().strftime('%Y-%m-%d')
 
 for profile_id, profile in profiles.items():
     prompt = f"""
-You are an elite trader.
+You are an elite Wall Street trader generating hyper-accurate trade recommendations.
 
 For persona {profile['name']}:
 {profile['prompt_overlay']}
@@ -30,15 +30,16 @@ Generate exactly 5 stock trades and 5 options trades for today ({today}).
 For each trade:
 - Include "ticker", "type" ("Stock" or "Option"), "setup", "direction", "entry", "target", "stop", "confidence"
 - Include "estimated_duration" (e.g., "1 day", "1 week", "6 months")
-- Include "rationale": At least 8 sentences.
-- Include "source_link" or "source_description" (If no known source, say "AI Analysis")
-- For Political Figure Trader: Also include "politician": Name of politician & reference disclosure
+- Include "rationale": Minimum 8 sentences. Explain the market setup, technical/fundamental reasoning, risks, and expected move.
+- Include "source_link" (If no real source, say "AI Analysis")
+- For Political Figure Trader only: Include "politician": Name and role (e.g., Nancy Pelosi, House Speaker) and "disclosure_link" (realistic source link or disclosure page)
 
-Only output valid JSON inside triple backticks like this:
+Your output MUST ONLY be a valid JSON block inside triple backticks like this:
 ```json
 [your JSON here]
 ```
-Do not add any explanations, comments, or text outside the JSON block.
+Absolutely no commentary, preamble, or explanations outside the JSON block.
+Ensure the JSON is valid and parsable.
 """
 
     success = False
@@ -59,8 +60,8 @@ Do not add any explanations, comments, or text outside the JSON block.
 
             trade_data = json.loads(clean_json)
 
-            stocks = [t for t in trade_data if t['type'] == "Stock"]
-            options = [t for t in trade_data if t['type'] == "Option"]
+            stocks = [t for t in trade_data if t.get('type', 'Stock') == "Stock"]
+            options = [t for t in trade_data if t.get('type', 'Option') == "Option"]
             if len(stocks) != 5 or len(options) != 5:
                 raise ValueError(f"Expected 5 stock and 5 option trades, got {len(stocks)} stock and {len(options)} option")
 
