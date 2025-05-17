@@ -7,46 +7,46 @@
   {
     "stock": "TSLA",
     "action": "Sell",
-    "target_price": 950.25
+    "target_price": 900.25
   },
   {
     "stock": "AMZN",
     "action": "Buy",
-    "target_price": 3350.75
+    "target_price": 3500.75
   },
   {
     "stock": "GOOGL",
-    "action": "Sell",
-    "target_price": 2800.0
-  },
-  {
-    "stock": "MSFT",
     "action": "Buy",
-    "target_price": 290.3
+    "target_price": 2800.0
   },
   {
     "stock": "NFLX",
     "action": "Sell",
-    "target_price": 600.8
+    "target_price": 600.2
   },
   {
     "stock": "FB",
     "action": "Buy",
-    "target_price": 330.2
+    "target_price": 350.8
+  },
+  {
+    "stock": "MSFT",
+    "action": "Buy",
+    "target_price": 290.4
   },
   {
     "stock": "NVDA",
     "action": "Sell",
-    "target_price": 700.5
-  },
-  {
-    "stock": "BABA",
-    "action": "Buy",
-    "target_price": 190.6
+    "target_price": 800.6
   },
   {
     "stock": "AMD",
+    "action": "Buy",
+    "target_price": 120.3
+  },
+  {
+    "stock": "BABA",
     "action": "Sell",
-    "target_price": 120.75
+    "target_price": 200.5
   }
 ]

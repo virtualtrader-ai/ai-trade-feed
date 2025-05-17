@@ -2,71 +2,71 @@
   {
     "stock": "AAPL",
     "action": "Buy",
-    "entry_price": 150.25,
-    "target_price": 155.5,
-    "stop_loss": 147.8
+    "entry_price": 145.5,
+    "target_price": 155.0,
+    "stop_loss": 142.0
   },
   {
-    "stock": "AMZN",
+    "stock": "MSFT",
     "action": "Buy",
-    "entry_price": 3200.75,
-    "target_price": 3300.0,
-    "stop_loss": 3150.5
+    "entry_price": 250.0,
+    "target_price": 265.0,
+    "stop_loss": 245.0
   },
   {
     "stock": "GOOGL",
     "action": "Buy",
     "entry_price": 2500.0,
-    "target_price": 2600.0,
+    "target_price": 2650.0,
     "stop_loss": 2450.0
   },
   {
-    "stock": "MSFT",
+    "stock": "AMZN",
     "action": "Buy",
-    "entry_price": 260.5,
-    "target_price": 270.0,
-    "stop_loss": 255.0
+    "entry_price": 3200.0,
+    "target_price": 3350.0,
+    "stop_loss": 3150.0
   },
   {
     "stock": "TSLA",
     "action": "Buy",
-    "entry_price": 700.0,
-    "target_price": 750.0,
-    "stop_loss": 680.0
-  },
-  {
-    "stock": "NFLX",
-    "action": "Buy",
-    "entry_price": 600.25,
-    "target_price": 625.0,
-    "stop_loss": 590.0
+    "entry_price": 650.0,
+    "target_price": 700.0,
+    "stop_loss": 630.0
   },
   {
     "stock": "NVDA",
     "action": "Buy",
-    "entry_price": 700.5,
-    "target_price": 725.0,
-    "stop_loss": 690.0
+    "entry_price": 650.0,
+    "target_price": 700.0,
+    "stop_loss": 630.0
   },
   {
-    "stock": "PYPL",
+    "stock": "JPM",
     "action": "Buy",
-    "entry_price": 250.75,
-    "target_price": 260.0,
-    "stop_loss": 245.0
+    "entry_price": 150.0,
+    "target_price": 160.0,
+    "stop_loss": 145.0
   },
   {
-    "stock": "FB",
+    "stock": "V",
     "action": "Buy",
-    "entry_price": 300.0,
-    "target_price": 310.0,
-    "stop_loss": 295.0
+    "entry_price": 220.0,
+    "target_price": 235.0,
+    "stop_loss": 215.0
+  },
+  {
+    "stock": "DIS",
+    "action": "Buy",
+    "entry_price": 170.0,
+    "target_price": 180.0,
+    "stop_loss": 165.0
   },
   {
     "stock": "BABA",
     "action": "Buy",
-    "entry_price": 200.25,
-    "target_price": 210.0,
+    "entry_price": 200.0,
+    "target_price": 215.0,
     "stop_loss": 195.0
   }
 ]

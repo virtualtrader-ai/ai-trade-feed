@@ -2,51 +2,51 @@
   {
     "stock": "PFE",
     "action": "Buy",
-    "target_price": 45.5
-  },
-  {
-    "stock": "MRK",
-    "action": "Buy",
-    "target_price": 85.2
-  },
-  {
-    "stock": "UNH",
-    "action": "Buy",
-    "target_price": 420.75
+    "target_price": 45.75
   },
   {
     "stock": "JNJ",
     "action": "Buy",
-    "target_price": 175.4
+    "target_price": 175.5
   },
   {
-    "stock": "CVS",
+    "stock": "MRK",
     "action": "Buy",
-    "target_price": 90.6
+    "target_price": 90.25
   },
   {
-    "stock": "AEP",
+    "stock": "UNH",
     "action": "Buy",
-    "target_price": 85.3
+    "target_price": 450.8
+  },
+  {
+    "stock": "ABBV",
+    "action": "Buy",
+    "target_price": 130.6
+  },
+  {
+    "stock": "WBA",
+    "action": "Buy",
+    "target_price": 55.4
   },
   {
     "stock": "DUK",
     "action": "Buy",
-    "target_price": 105.8
+    "target_price": 105.2
   },
   {
     "stock": "NEE",
     "action": "Buy",
-    "target_price": 150.25
+    "target_price": 120.75
   },
   {
     "stock": "SO",
     "action": "Buy",
-    "target_price": 70.9
+    "target_price": 65.9
   },
   {
     "stock": "XEL",
     "action": "Buy",
-    "target_price": 70.1
+    "target_price": 70.3
   }
 ]

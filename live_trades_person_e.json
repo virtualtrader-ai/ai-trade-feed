@@ -1,72 +1,62 @@
 [
   {
     "stock": "AAPL",
-    "strategy": "long call",
-    "expiration_date": "2025-06-21",
+    "strategy": "call option",
     "strike_price": 150,
-    "contract_price": 5.5
+    "expiration_date": "2025-06-21"
   },
   {
     "stock": "TSLA",
-    "strategy": "long put",
-    "expiration_date": "2025-06-21",
+    "strategy": "put option",
     "strike_price": 700,
-    "contract_price": 8.75
+    "expiration_date": "2025-06-21"
   },
   {
     "stock": "AMZN",
-    "strategy": "short straddle",
-    "expiration_date": "2025-06-21",
+    "strategy": "call option",
     "strike_price": 3500,
-    "contract_price": 45.25
+    "expiration_date": "2025-06-21"
   },
   {
     "stock": "GOOGL",
-    "strategy": "long call",
-    "expiration_date": "2025-06-21",
+    "strategy": "put option",
     "strike_price": 2500,
-    "contract_price": 30.8
+    "expiration_date": "2025-06-21"
   },
   {
     "stock": "NFLX",
-    "strategy": "long put",
-    "expiration_date": "2025-06-21",
-    "strike_price": 500,
-    "contract_price": 6.5
+    "strategy": "call option",
+    "strike_price": 600,
+    "expiration_date": "2025-06-21"
   },
   {
     "stock": "MSFT",
-    "strategy": "short strangle",
-    "expiration_date": "2025-06-21",
+    "strategy": "put option",
     "strike_price": 250,
-    "contract_price": 10.5
+    "expiration_date": "2025-06-21"
   },
   {
     "stock": "FB",
-    "strategy": "long call",
-    "expiration_date": "2025-06-21",
+    "strategy": "call option",
     "strike_price": 300,
-    "contract_price": 8.2
+    "expiration_date": "2025-06-21"
   },
   {
     "stock": "NVDA",
-    "strategy": "long put",
-    "expiration_date": "2025-06-21",
-    "strike_price": 600,
-    "contract_price": 12.75
+    "strategy": "put option",
+    "strike_price": 700,
+    "expiration_date": "2025-06-21"
   },
   {
     "stock": "BABA",
-    "strategy": "short straddle",
-    "expiration_date": "2025-06-21",
+    "strategy": "call option",
     "strike_price": 200,
-    "contract_price": 15.4
+    "expiration_date": "2025-06-21"
   },
   {
     "stock": "SPY",
-    "strategy": "long call",
-    "expiration_date": "2025-06-21",
-    "strike_price": 420,
-    "contract_price": 3.9
+    "strategy": "put option",
+    "strike_price": 400,
+    "expiration_date": "2025-06-21"
   }
 ]
