@@ -60,8 +60,8 @@ Ensure the JSON is valid and parsable.
 
             trade_data = json.loads(clean_json)
 
-            stocks = [t for t in trade_data if t.get('type', 'Stock') == "Stock"]
-            options = [t for t in trade_data if t.get('type', 'Option') == "Option"]
+            stocks = [t for t in trade_data if t.get('type', '').lower() == "stock"]
+            options = [t for t in trade_data if t.get('type', '').lower() == "option"]
             if len(stocks) != 5 or len(options) != 5:
                 raise ValueError(f"Expected 5 stock and 5 option trades, got {len(stocks)} stock and {len(options)} option")
 
