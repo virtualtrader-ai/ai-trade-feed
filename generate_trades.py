@@ -7,32 +7,43 @@ import time
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 profiles = {
-    "person_a": {"name": "Luna - The Momentum Trader", "prompt_overlay": "Focus on momentum breakout setups in Tech, Energy, Crypto. Seek multi-day consolidations with breakout volume."},
-    "person_b": {"name": "Mark - The Conservative Investor", "prompt_overlay": "Focus on conservative swing trades backed by insider buying, dividends, low volatility setups."},
-    "person_c": {"name": "Riley - The Catalyst Trader", "prompt_overlay": "Focus on news-driven trades (earnings, FDA, catalysts) with asymmetric reward/risk setups."},
-    "person_d": {"name": "Zara - The Defensive Strategist", "prompt_overlay": "Focus on healthcare, utilities, staples. Seek setups that outperform in weak or uncertain markets."},
-    "person_e": {"name": "Leo - The High-Risk Options Specialist", "prompt_overlay": "Focus on high IV, speculative short-term option setups (0DTE, 1DTE) with unusual flow."}
+    "person_a": {"name": "Luna - The Momentum Trader", "prompt_overlay": "Focus on stocks showing unusual breakout volume, recent earnings beats, or sector momentum shifts."},
+    "person_b": {"name": "Mark - The Conservative Investor", "prompt_overlay": "Focus on fundamentally strong companies with dividend support, low beta, and recent insider buying or upgrades."},
+    "person_c": {"name": "Riley - The Catalyst Trader", "prompt_overlay": "Focus on stocks with upcoming earnings, FDA events, regulatory rulings, or notable institutional flows."},
+    "person_d": {"name": "Zara - The Defensive Strategist", "prompt_overlay": "Focus on healthcare, utilities, or consumer staples stocks outperforming during market pullbacks or high VIX environments."},
+    "person_e": {"name": "Leo - The High-Risk Options Specialist", "prompt_overlay": "Focus on speculative small caps with unusual options flow, high implied volatility, or rumor-driven moves."}
 }
 
 today = date.today().strftime('%Y-%m-%d')
 
 total_tokens_used = 0
 profile_usage = {}
+cumulative_metrics_file = "system_metrics.json"
+
+# Load system metrics if exist
+if os.path.exists(cumulative_metrics_file):
+    with open(cumulative_metrics_file) as f:
+        system_metrics = json.load(f)
+else:
+    system_metrics = {"total_tokens": 0, "total_cost_usd": 0, "profiles": {p['name']: {"tokens": 0, "cost_usd": 0} for p in profiles.values()}}
 
 for profile_id, profile in profiles.items():
     prompt = f"""
-You are an elite professional stock and options trader.
+You are an elite stock and options trader.
 
-I need you to generate exactly 10 unique and diverse trade ideas for today ({today}), in the following strict JSON array format only.
+For persona {profile['name']}:
+{profile['prompt_overlay']}
 
-IMPORTANT:
-- Only return a clean JSON array.
-- DO NOT write anything else before or after the JSON.
-- Each trade must include all the following fields:
+Generate exactly 10 unique and diverse trade ideas for today ({today}).
+
+Important:
+- Include catalysts like news, earnings, flow data, or economic reports.
+- Mention relevant sectors, volatility, insider buying, or macro risks.
+- Use this **strict JSON array format only**, with NO explanations outside JSON:
 [
   {{
     "ticker": "SPY",
-    "setup": "Gap Fade Reversal",
+    "setup": "Gap Fade Reversal with CPI catalyst",
     "direction": "Put",
     "strike": 512,
     "expiry": "{today}",
@@ -40,17 +51,14 @@ IMPORTANT:
     "target": 1.20,
     "stop": 0.20,
     "confidence": "High",
-    "rationale": "SPY opened with a weak gap following CPI data, showing rejection at premarket highs. Coupled with increasing put volume and soft breadth, this creates a high probability fade fitting the momentum strategy."
+    "rationale": "SPY opened weak after CPI data indicating persistent inflation. The rejection at key resistance combined with high put volume and deteriorating breadth makes this a high probability short opportunity fitting the persona strategy. Additionally, macro sentiment is risk-off today following Fed comments, increasing the setup quality."
   }}
 ]
 
-Your persona is:
-{profile['prompt_overlay']}
-
 Ensure:
-- 10 trades.
-- JSON format is exactly as shown above.
+- JSON format as above.
 - Include creative setups, avoid duplicates.
+- Each rationale must be at least **5 detailed sentences**, referencing catalysts, technical, and market psychology.
 """
 
     success = False
@@ -65,16 +73,26 @@ Ensure:
 
             raw_response = response.choices[0].message.content.strip()
             if not raw_response:
-                raise ValueError("⚠️ Empty response from GPT")
+                raise ValueError("Empty response from GPT")
 
             print(f"✅ Raw response sample for {profile['name']}:\n{raw_response[:300]}...")
 
             trade_data = json.loads(raw_response)
             if len(trade_data) != 10:
-                raise ValueError(f"❗ Expected 10 trades, got {len(trade_data)}")
+                raise ValueError(f"Expected 10 trades, got {len(trade_data)}")
 
             tokens_used = response.usage.total_tokens
-            profile_usage[profile['name']] = tokens_used
+            profile_usage[profile['name']] = {
+                "tokens_this_run": tokens_used,
+                "estimated_cost_this_run": round(tokens_used / 1000 * 0.002, 4)
+            }
+
+            # Update cumulative metrics
+            system_metrics["total_tokens"] += tokens_used
+            system_metrics["total_cost_usd"] += tokens_used / 1000 * 0.002
+            system_metrics["profiles"][profile['name']]["tokens"] += tokens_used
+            system_metrics["profiles"][profile['name']]["cost_usd"] += tokens_used / 1000 * 0.002
+
             total_tokens_used += tokens_used
             success = True
             break
@@ -97,10 +115,14 @@ usage_report = {
     "date": today,
     "total_tokens_used": total_tokens_used,
     "estimated_cost_usd": round(total_tokens_used / 1000 * 0.002, 4),
-    "profile_breakdown": profile_usage
+    "profile_breakdown": profile_usage,
+    "cumulative_metrics": system_metrics
 }
 
 with open("usage_report.json", "w") as f:
     json.dump(usage_report, f, indent=2)
 
-print("✅ All files and usage report saved.")
+with open(cumulative_metrics_file, "w") as f:
+    json.dump(system_metrics, f, indent=2)
+
+print("✅ All files, usage report, and system metrics saved.")
