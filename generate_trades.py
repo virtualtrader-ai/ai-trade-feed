@@ -42,7 +42,7 @@ Only output valid JSON inside triple backticks like this:
 ```
 Do not add any explanations, comments, or text outside the JSON block.
 Ensure the JSON is valid and parsable.
-""" 
+"""
 
     success = False
     for attempt in range(3):
@@ -64,9 +64,11 @@ Ensure the JSON is valid and parsable.
                 clean_json = raw_response
 
             trade_data = json.loads(clean_json)
+            if not isinstance(trade_data, list):
+                raise ValueError("Parsed data is not a list")
 
-            stocks = [t for t in trade_data if t.get('type', '').lower() == "stock"]
-            options = [t for t in trade_data if t.get('type', '').lower() == "option"]
+            stocks = [t for t in trade_data if isinstance(t, dict) and t.get('type', '').lower() == "stock"]
+            options = [t for t in trade_data if isinstance(t, dict) and t.get('type', '').lower() == "option"]
             if len(stocks) != 5 or len(options) != 5:
                 raise ValueError(f"Expected 5 stock and 5 option trades, got {len(stocks)} stock and {len(options)} option")
 
@@ -98,33 +100,40 @@ usage_report = {
     "profiles": []
 }
 
-# Update system_metrics.json
+# Load existing system_metrics.json or initialize
 try:
     with open("system_metrics.json", "r") as f:
         system_metrics = json.load(f)
-except FileNotFoundError:
+        if "profiles" not in system_metrics:
+            system_metrics["profiles"] = {}
+except (FileNotFoundError, json.JSONDecodeError):
     system_metrics = {
         "total_tokens_used": 0,
         "total_cost": 0,
         "profiles": {}
     }
 
+# Update metrics and usage report
 for p in profile_stats:
     name = p["name"]
     tokens = p["tokens_used_this_run"]
     cost = round(tokens / 1000 * cost_per_1k, 5)
 
+    prev = system_metrics["profiles"].get(name, {"total_tokens_used": 0, "total_cost": 0})
+    updated_total_tokens = prev["total_tokens_used"] + tokens
+    updated_total_cost = round(prev["total_cost"] + cost, 5)
+
     usage_report["profiles"].append({
         "name": name,
         "tokens_used_this_run": tokens,
-        "total_tokens_used": system_metrics["profiles"].get(name, {}).get("total_tokens_used", 0) + tokens,
-        "total_cost": round(system_metrics["profiles"].get(name, {}).get("total_cost", 0) + cost, 5)
+        "total_tokens_used": updated_total_tokens,
+        "total_cost": updated_total_cost
     })
 
-    if name not in system_metrics["profiles"]:
-        system_metrics["profiles"][name] = {"total_tokens_used": 0, "total_cost": 0}
-    system_metrics["profiles"][name]["total_tokens_used"] += tokens
-    system_metrics["profiles"][name]["total_cost"] += cost
+    system_metrics["profiles"][name] = {
+        "total_tokens_used": updated_total_tokens,
+        "total_cost": updated_total_cost
+    }
 
 system_metrics["total_tokens_used"] += total_tokens
 system_metrics["total_cost"] += round(total_tokens / 1000 * cost_per_1k, 5)
