@@ -1,38 +1,38 @@
 [
   {
-    "ticker": "UNH",
-    "setup": "Bull Flag Breakout",
+    "ticker": "PFE",
+    "setup": "Bullish Breakout",
     "direction": "Call",
-    "strike": 450,
+    "strike": 50,
     "expiry": "2025-06-21",
-    "entry": 3.5,
-    "target": 6.8,
-    "stop": 2.8,
-    "confidence": "High",
-    "rationale": "UNH has formed a clear bull flag pattern after a recent uptrend, indicating a potential breakout to the upside. With strong relative strength in the healthcare sector and positive market sentiment towards defensive stocks, UNH is poised for further upside."
+    "entry": 1.25,
+    "target": 2.5,
+    "stop": 0.75,
+    "confidence": "Medium",
+    "rationale": "PFE has been consolidating within a tight range and recently broke above a key resistance level on high volume. Positive news on their pipeline and strong sector momentum support a bullish breakout trade."
   },
   {
-    "ticker": "WMT",
-    "setup": "Double Bottom Reversal",
+    "ticker": "DUK",
+    "setup": "Pullback Buy",
+    "direction": "Call",
+    "strike": 100,
+    "expiry": "2025-07-19",
+    "entry": 2.75,
+    "target": 4.5,
+    "stop": 2.0,
+    "confidence": "High",
+    "rationale": "DUK has shown strong relative strength in the utilities sector and is currently pulling back to a key support level. With a bullish trend intact and defensive sector rotation, a pullback buy offers a high reward setup."
+  },
+  {
+    "ticker": "PG",
+    "setup": "Earnings Run-up",
     "direction": "Call",
     "strike": 140,
     "expiry": "2025-06-21",
-    "entry": 2.2,
-    "target": 4.5,
-    "stop": 1.5,
-    "confidence": "Medium",
-    "rationale": "WMT has formed a double bottom pattern near a key support level, suggesting a potential trend reversal. As a defensive consumer staple stock, WMT tends to outperform in weak markets, making it an attractive trade in the current environment."
-  },
-  {
-    "ticker": "JNJ",
-    "setup": "Ascending Triangle Breakout",
-    "direction": "Call",
-    "strike": 170,
-    "expiry": "2025-06-21",
-    "entry": 2.8,
-    "target": 5.2,
+    "entry": 3.5,
+    "target": 6.0,
     "stop": 2.0,
     "confidence": "High",
-    "rationale": "JNJ is exhibiting a bullish ascending triangle pattern, signaling a potential breakout to the upside. With a strong track record of stability and growth in the healthcare sector, JNJ is well positioned to outperform in uncertain markets."
+    "rationale": "PG is approaching its earnings release date and historically tends to rally into earnings. Positive analyst sentiments and sector rotation towards consumer staples support a bullish call option trade for an earnings run-up."
   }
 ]

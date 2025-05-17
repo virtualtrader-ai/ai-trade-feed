@@ -3,36 +3,36 @@
     "ticker": "AAPL",
     "setup": "Bullish Flag Pattern",
     "direction": "Call",
-    "strike": 135,
+    "strike": 130,
     "expiry": "2025-06-21",
-    "entry": 2.5,
-    "target": 4.0,
-    "stop": 1.8,
+    "entry": 3.5,
+    "target": 5.8,
+    "stop": 2.8,
     "confidence": "Medium",
-    "rationale": "AAPL has been consolidating in a bullish flag pattern after a recent uptrend. Insider buying activity has been observed, indicating potential upside. Low volatility in the stock suggests a breakout to the upside is likely."
+    "rationale": "AAPL has formed a bullish flag pattern after a strong uptrend, with increasing volume and positive MACD crossover. Insider buying and upcoming product launches provide additional catalysts for a potential breakout."
   },
   {
-    "ticker": "T",
-    "setup": "Dividend Play",
+    "ticker": "MSFT",
+    "setup": "Dividend Support Bounce",
     "direction": "Call",
-    "strike": 30,
+    "strike": 250,
     "expiry": "2025-06-21",
-    "entry": 0.8,
-    "target": 1.2,
-    "stop": 0.5,
+    "entry": 4.2,
+    "target": 6.8,
+    "stop": 3.5,
     "confidence": "High",
-    "rationale": "T has a high dividend yield and a history of consistent payouts, making it an attractive dividend play. Insider buying has been increasing, signaling confidence in the stock. The low volatility setup suggests limited downside risk."
+    "rationale": "MSFT recently bounced off its dividend support level with strong buying pressure, indicating institutional accumulation. Low volatility and robust fundamentals make it an attractive swing trade candidate."
   },
   {
-    "ticker": "VZ",
-    "setup": "Low Volatility Breakout",
+    "ticker": "TSLA",
+    "setup": "Inside Bar Breakout",
     "direction": "Call",
-    "strike": 55,
+    "strike": 650,
     "expiry": "2025-06-21",
-    "entry": 1.2,
-    "target": 2.0,
-    "stop": 0.8,
+    "entry": 12.5,
+    "target": 18.7,
+    "stop": 10.8,
     "confidence": "Medium",
-    "rationale": "VZ has been trading in a tight range with decreasing volatility, indicating a potential breakout. Insider buying activity has been noted, suggesting positive sentiment. The low volatility setup provides a favorable risk-reward ratio for a bullish trade."
+    "rationale": "TSLA formed an inside bar pattern with decreasing volatility and bullish RSI divergence. Positive news catalysts and strong institutional ownership support a potential breakout to the upside."
   }
 ]

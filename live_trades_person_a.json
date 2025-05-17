@@ -1,38 +1,38 @@
 [
   {
     "ticker": "AAPL",
-    "setup": "Bullish Breakout",
+    "setup": "Bull Flag Breakout",
     "direction": "Call",
-    "strike": 135,
+    "strike": 140,
     "expiry": "2025-05-21",
     "entry": 2.5,
-    "target": 4.0,
-    "stop": 1.8,
+    "target": 5.0,
+    "stop": 1.5,
     "confidence": "High",
-    "rationale": "AAPL has been consolidating for several days with decreasing volume, indicating a potential breakout. Positive news on upcoming product releases and overall market strength further support this bullish trade."
+    "rationale": "AAPL has been consolidating in a bull flag pattern with increasing volume. Positive news on new product launches and strong technical support at the current level indicate a potential breakout to the upside."
   },
   {
     "ticker": "TSLA",
-    "setup": "Bearish Reversal",
-    "direction": "Put",
-    "strike": 600,
+    "setup": "Cup and Handle Breakout",
+    "direction": "Call",
+    "strike": 1100,
     "expiry": "2025-05-21",
-    "entry": 4.75,
-    "target": 3.0,
-    "stop": 6.2,
-    "confidence": "Medium",
-    "rationale": "TSLA has shown signs of exhaustion after a strong rally, with overbought conditions and decreasing buying pressure. A bearish reversal setup is forming, especially with potential negative catalysts in the EV sector."
+    "entry": 12.0,
+    "target": 20.0,
+    "stop": 8.0,
+    "confidence": "High",
+    "rationale": "TSLA formed a cup and handle pattern with breakout volume and positive momentum. The company's recent announcements on expanding product lines and market share growth support a bullish bias for a potential breakout."
   },
   {
-    "ticker": "ETH",
-    "setup": "Crypto Breakout",
-    "direction": "Buy",
-    "strike": 3500,
-    "expiry": "2025-05-17",
-    "entry": 3200,
-    "target": 3800,
-    "stop": 3000,
+    "ticker": "BTC",
+    "setup": "Ascending Triangle Breakout",
+    "direction": "Call",
+    "strike": 45000,
+    "expiry": "2025-06-21",
+    "entry": 3000,
+    "target": 6000,
+    "stop": 2000,
     "confidence": "High",
-    "rationale": "ETH has been consolidating in a tight range with increasing volume, indicating a breakout is imminent. Positive sentiment in the crypto market and upcoming network upgrades provide strong catalysts for this trade."
+    "rationale": "BTC is forming an ascending triangle pattern with higher lows and a resistance level. Positive sentiment around institutional adoption and decreasing supply indicate a potential breakout to the upside in the crypto market."
   }
 ]

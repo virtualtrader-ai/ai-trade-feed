@@ -3,36 +3,36 @@
     "ticker": "AAPL",
     "setup": "Earnings Play",
     "direction": "Call",
-    "strike": 135,
+    "strike": 130,
     "expiry": "2025-05-17",
-    "entry": 2.5,
-    "target": 5.0,
-    "stop": 1.5,
-    "confidence": "Medium",
-    "rationale": "AAPL is set to release earnings today after market close, with analysts expecting positive results. Anticipation of a strong earnings report and potential positive guidance could drive the stock price higher, making a short-term call option play attractive."
+    "entry": 1.5,
+    "target": 3.0,
+    "stop": 0.8,
+    "confidence": "High",
+    "rationale": "AAPL is expected to release positive earnings today, with analysts forecasting strong revenue growth. This could lead to a quick spike in the stock price, making short-term call options an attractive trade."
   },
   {
     "ticker": "TSLA",
-    "setup": "Short Squeeze",
+    "setup": "Technical Breakout",
     "direction": "Call",
-    "strike": 1100,
+    "strike": 650,
     "expiry": "2025-05-17",
-    "entry": 10.0,
-    "target": 20.0,
-    "stop": 5.0,
-    "confidence": "High",
-    "rationale": "TSLA has a high short interest, and any positive news could trigger a short squeeze, causing the stock price to skyrocket. Buying short-term call options allows for potential significant gains if the squeeze occurs."
+    "entry": 2.2,
+    "target": 4.5,
+    "stop": 1.0,
+    "confidence": "Medium",
+    "rationale": "TSLA has broken out of a key resistance level with high trading volume, indicating strong bullish momentum. This breakout could lead to a continuation of the uptrend, making call options an enticing trade."
   },
   {
-    "ticker": "AMZN",
-    "setup": "Momentum Breakout",
-    "direction": "Call",
-    "strike": 3500,
+    "ticker": "NFLX",
+    "setup": "Volatility Squeeze",
+    "direction": "Put",
+    "strike": 500,
     "expiry": "2025-05-17",
-    "entry": 15.0,
-    "target": 30.0,
-    "stop": 7.5,
-    "confidence": "Medium",
-    "rationale": "AMZN has been consolidating in a tight range, showing signs of building momentum for a breakout. A break above key resistance levels could lead to a rapid price increase, making short-term call options a lucrative trade."
+    "entry": 3.0,
+    "target": 6.0,
+    "stop": 1.5,
+    "confidence": "High",
+    "rationale": "NFLX has been trading in a tight range with decreasing volatility, suggesting a potential breakout to the downside. A put option trade can capitalize on this expected move with high profit potential."
   }
 ]
