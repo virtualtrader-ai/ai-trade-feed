@@ -1,4 +1,4 @@
-name: Generate and Push Multi-Profile Trades
+name: Generate and Push Multi-Profile Trades and Market Pulse
 
 on:
   schedule:
@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: pip install openai
 
-      - name: Run multi-profile trade generator
+      - name: Run multi-profile trade generator with market pulse
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
@@ -31,6 +31,6 @@ jobs:
         run: |
           git config user.name "auto-bot"
           git config user.email "bot@trading.ai"
-          git add live_trades_*.json usage_report.json
-          git commit -m "Daily trade & usage report update"
+          git add live_trades_*.json usage_report.json market_pulse.json system_metrics.json
+          git commit -m "Daily trade, market pulse, and usage report update"
           git push
