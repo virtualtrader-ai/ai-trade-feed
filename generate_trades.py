@@ -2,6 +2,7 @@ from openai import OpenAI
 import json
 import os
 from datetime import date
+import time
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
@@ -37,24 +38,62 @@ Act as a professional options and stock trader. Generate 10 high-reward trade re
 Persona Focus:
 {profile['prompt_overlay']}
 
-Criteria:
-- Scan all US stocks tradable on Robinhood (assume all US tickers).
-- Include Ticker, Setup, Direction (Call or Put if applicable), Strike (if options), Expiry (if applicable), Entry, Target, Stop, Confidence (High/Medium/Low).
-- Provide a **detailed multi-sentence rationale explaining the setup, catalyst, and why it fits the persona.**
+IMPORTANT: 
+- ONLY reply with a pure JSON array.
+- If you cannot find 10 trades, return at least 3.
+- DO NOT leave response blank or provide explanations.
+- JSON must include:
+    - ticker, setup, direction, strike, expiry, entry, target, stop, confidence, rationale.
+    - Rationale must be 3-5 sentences explaining the trade setup, catalyst, and why it fits the persona.
 
-Output a pure JSON array only.
+Example:
+[
+  {{
+    "ticker": "SPY",
+    "setup": "Gap Fade Reversal",
+    "direction": "Put",
+    "strike": 512,
+    "expiry": "{today}",
+    "entry": 0.45,
+    "target": 1.20,
+    "stop": 0.20,
+    "confidence": "High",
+    "rationale": "SPY opened with a weak gap following CPI data, showing rejection at premarket highs. Coupled with increasing put volume and soft breadth, this creates a high probability fade fitting the momentum strategy."
+  }}
+]
 """
 
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.7
-    )
+    success = False
+    for attempt in range(3):
+        try:
+            print(f"\n🔄 Attempt {attempt + 1} for {profile['name']}")
+            response = client.chat.completions.create(
+                model="gpt-4",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.7
+            )
 
-    try:
-        trade_data = json.loads(response.choices[0].message.content.strip())
-    except json.JSONDecodeError:
-        raise Exception(f"Failed to parse response for {profile['name']}")
+            raw_response = response.choices[0].message.content.strip()
+            if not raw_response:
+                raise ValueError("⚠️ Empty response from GPT")
 
-    with open(f"live_trades_{profile_id}.json", "w") as f:
+            # Debug log the raw output if needed
+            print(f"✅ Received response for {profile['name']}:")
+            print(raw_response[:500] + "...")  # Print first 500 chars
+
+            trade_data = json.loads(raw_response)
+            success = True
+            break  # Success, exit loop
+
+        except Exception as e:
+            print(f"❌ Attempt {attempt + 1} failed: {e}")
+            time.sleep(5)  # Wait before retry
+
+    if not success:
+        raise Exception(f"❗ Failed after 3 attempts for {profile['name']}")
+
+    # Save profile-specific JSON
+    filename = f"live_trades_{profile_id}.json"
+    with open(filename, "w") as f:
         json.dump(trade_data, f, indent=2)
+    print(f"📦 Saved {filename}")
